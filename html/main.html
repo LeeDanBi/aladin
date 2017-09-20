@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+    <html lang="ko-KR">
+      <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--[if lte IE 9]>
+          <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+           <script src="../ie/ie7/IE9.js"></script>
+           <script src="../ie/css3PIE/PIE_IE9.js"></script>
+          <![endif]-->
+          <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+          <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+          <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
+          <link rel="stylesheet" type="text/css" href="../css/src/main.css" />
+
+          <title>알라딘</title>
+      </head>
+      <body>
+        <div id="wrap">
+          <header id="headBox">
+            <nav id="unb">
+              <div class="box_wrap"> 
+              <!-- .box_wrap은 가로 사이즈용 태그입니다. -->
+                <ul>
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">마이페이지</a></li>
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">장바구니</a></li>
+                </ul>
+              </div>
+            </nav>
+            <article class="box_main_head">
+              <div class="box_wrap">
+                <h1 index="0"><a href="main.html"><span class="hidden">알라딘</span></a></h1>
+                <form action="#" method="get">
+                  <fieldset>
+                    <legend></legend>
+                    <!-- 여기에 셀렉태그 -->
+                    <label for="selectBook">
+                      <span class="hidden">
+                        검색할 도서의 종류를 고르세요.
+                      </span>
+                    </label>
+                    <select name="selectBook" id="selectBook">
+                      <option value="통합검색">통합검색</option>
+                      <option value="국내도서">국내도서</option>
+                      <option value="해외도서">해외도서</option>
+                      <option value="ebook">ebook</option>
+                      <option value="중고도서">중고도서</option>
+                    </select>
+                    <label for="searchBook"><span class="hidden">원하는 도서를 검색하세요.</span></label>
+                    <input type="search" name="searchBook" id="searchBook" />
+                    <label for="searchBookBtn"><span class="hidden">검색 버튼입니다.</span></label>
+                    <button type="button" id="searchBookBtn">검색</button>
+                  </fieldset>
+                </form>
+              </div>
+            </article>
+            <nav id="gnb">
+              <div class="box_wrap">
+                <ul>
+                  <li id="menuButton"><button type="button" id="buttonDeco"><span class="hidden">menu</span></button></li>
+                  <li><a href="sub_interior.html">국내도서</a></li>
+                  <li><a href="sub_abroad.html">해외도서</a></li>
+                  <li><a href="sub_ebook.html">ebook</a></li>
+                  <li><a href="sub_used.html">중고매장</a></li>
+                  <li><a href="#">커피</a></li>
+                  <li><a href="#">음반/DVD</a></li>
+                  <li><a href="#">알라딘굿즈</a></li>
+                  <li><a href="#">북플/서재</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <!-- // #headBox -->
+          <section id="addBanner">
+            <div class="wrap_banner">
+              <ul>
+                <li class="bn_1"><a href="#"></a></li>
+                <li class="bn_2"><a href="#"></a></li>
+                <li class="bn_3"><a href="#"></a></li>
+                <li class="bn_4"><a href="#"></a></li>
+              </ul>
+            </div>
+            <!-- 낙엽 효과 넣은 것 시작 -->
+            <div class="effect_maple maple_1_l"></div>
+            <div class="effect_maple maple_1_r"></div>
+            <div class="effect_maple maple_2_l"></div>
+            <div class="effect_maple maple_2_r"></div>
+            <div class="effect_maple maple_3_l"></div>
+            <div class="effect_maple maple_3_r"></div>
+            <!-- 낙엽 효과 넣은 것 끝 -->
+            <div class="box_btn">
+              <div class="btn_left"></div>
+              <ul class="btn_indicate">
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+              </ul>
+              <div class="btn_right"></div>
+            </div>
+          </section>
+          <!-- // #addBanner -->
+          <article id="contentBox">
+            <article class="box_search_rank">
+              <div class="box_wrap">
+                <article class="deatail_search">
+                  <form action="#" method="get">
+                    <fieldset>
+                      <legend class="hidden">상세 검색</legend>
+                      <div class="box_search">
+                        <label for="searchBookD"><span class="hidden">원하는 도서를 검색하세요.</span></label>
+                        <input type="search" name="searchBookD" id="searchBookD" />
+                        <label for="DsearchBookBtn"><span class="hidden">검색 버튼입니다.</span></label>
+                        <button type="button" id="DsearchBookBtn"> <i class="fa fa-search" aria-hidden="true"></i> <span class="hidden">검색</span></button>
+                      </div>
+                      <dl>
+                        <dt>검색조건</dt>
+                        <dd>
+                          <div class="box_check">
+                            <input type="checkbox" value="제목" id="titleName" name="serch_con" />
+                            <label for="titleName">제목<span class="hidden">체크박스입니다.</span></label>
+                          </div>
+                          <div class="box_check">
+                            <input type="checkbox" value="저자" id="author" name="serch_con" />
+                            <label for="author">저자<span class="hidden">체크박스입니다.</span></label>
+                          </div>
+                          <div class="box_check">
+                            <input type="checkbox" value="출판사" id="publisher" name="serch_con" />
+                            <label for="publisher">출판사<span class="hidden">체크박스입니다.</span></label>
+                          </div>
+                          <div class="box_check">
+                            <input type="checkbox" value="주제어" id="keyWord" name="serch_con" />
+                            <label for="keyWord">주제어<span class="hidden">체크박스입니다.</span></label>
+                          </div>
+                          <div class="box_check">
+                            <input type="checkbox" value="ISBN" id="isbn" name="serch_con" />
+                            <label for="isbn">ISBN<span class="hidden">체크박스입니다.</span></label>
+                          </div>
+                          <div class="box_check">
+                            <input type="checkbox" value="태그" id="tag" name="serch_con" />
+                            <label for="tag">태그<span class="hidden">체크박스입니다.</span></label>
+                          </div>
+                          <div class="box_check">
+                            <input type="checkbox" value="목차" id="index" name="serch_con" />
+                            <label for="index">목차<span class="hidden">체크박스입니다.</span></label>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>출간일</dt>
+                        <dd>
+                          <div class="box_radio">
+                            <input type="radio" name="release_date" id="month3" value="3개월" />
+                            <label for="month3">3개월</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="release_date" id="month12" value="12개월" />
+                            <label for="month12">12개월</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="release_date" id="month24" value="24개월" />
+                            <label for="month24">24개월</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="release_date" id="month36" value="36개월" />
+                            <label for="month36">36개월</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="release_date" id="month60" value="60개월" />
+                            <label for="month60">60개월</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="release_date" id="monthAll" value="전체" />
+                            <label for="monthAll">전체</label>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>재고상태</dt>
+                        <dd>
+                          <div class="box_radio">
+                            <input type="radio" name="stock" id="notStock" value="품절/절판제외" />
+                            <label for="notStock">품절/절판제외</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="stock" id="notOPrint" value="절판제외" />
+                            <label for="notOPrint">절판제외</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="stock" id="stockAll" value="전체" />
+                            <label for="stockAll">전체</label>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>판매가</dt>
+                        <dd>
+                           <div class="box_radio">
+                            <input type="radio" name="price" id="hundred10" value="1만원" />
+                            <label for="hundred10">1만원</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="price" id="hundred20" value="2만원" />
+                            <label for="hundred20">2만원</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="price" id="hundred30" value="3만원" />
+                            <label for="hundred30">3만원</label>
+                          </div>
+                          <div class="box_radio">
+                            <input type="radio" name="price" id="priceAll" value="전체" />
+                            <label for="priceAll">전체</label>
+                          </div>
+                        </dd>
+                      </dl>
+                    </fieldset>
+                  </form>
+                </article>
+                <article class="ranking_10">
+                  <div class="box_ranking">
+                    <h3>
+                      종합 주간 <span class="pink">베스트 셀러</span>
+                      <span class="top10">top 10</span>
+                    </h3>
+                    <ul>
+                      <li>
+                        <span class="rank">1<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">82년생 김지영</a>
+                          <span class="grade" aria-hidden="true">-
+                            <span class="hidden">순위변동 없음</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                         <span class="rank">2<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">살인자의 기억법</a>
+                          <span class="grade rank_up">1
+                            <span class="hidden">up</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="rank">3<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">주진우의 이명박 추격..</a>
+                          <span class="grade rank_down">2
+                            <span class="hidden">down</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="rank">4<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">언어의 온도</a>
+                          <span class="grade rank_up">2
+                            <span class="hidden">up</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="rank">5<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">나의 문화유산답사기...</a>
+                          <span class="grade" aria-hidden="true">-
+                            <span class="hidden">순위변동 없음</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="rank">6<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">바깥은 열</a>
+                          <span class="grade" class="rank_up">10
+                            <span class="hidden">up</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="rank">7<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">오직 두 사람</a>
+                          <span class="grade" aria-hidden="true">-
+                            <span class="hidden">순위변동 없음</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="rank">8<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">나의 문화유산답사기...</a>
+                          <span class="grade" aria-hidden="true">-
+                            <span class="hidden">순위변동 없음</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="rank">9<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">기사단장 죽이기 1</a>
+                          <span class="grade rank_up">1
+                            <span class="hidden">up</span>
+                          </span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="rank">10<span class="hidden">위</span></span>
+                        <span>
+                          <a href="#">이제 와서 날개라 해도</a>
+                          <span class="grade rank_down">6
+                            <span class="hidden">down</span>
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </article>
+            <!-- // .box_search_rank -->
+            <article class="box_recommend book_show">
+              <div class="box_wrap">
+                <h3>추천도서</h3>
+                <div class="list_wrap">
+                  <ul class="list_book">
+                    <li class="book_1"><a href="#"></a></li>
+                    <li class="book_2"><a href="#"></a></li>
+                    <li class="book_3"><a href="#"></a></li>
+                    <li class="book_4"><a href="#"></a></li>
+                    <li class="book_5"><a href="#"></a></li>
+                    <li class="book_6"><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="deco"></div>
+                <ul class="btn_book">
+                  <li class="btn bnt_left_"></li>
+                  <li class="btn bnt_right_"></li>
+                </ul>
+              </div>
+            </article>
+            <!-- // .box_recommend -->
+            <article class="box_new book_show">
+              <div class="box_wrap">
+                <h3>신간도서</h3>
+                <div class="list_wrap">
+                  <ul class="list_book">
+                    <li class="book_1"><a href="#"></a></li>
+                    <li class="book_2"><a href="#"></a></li>
+                    <li class="book_3"><a href="#"></a></li>
+                    <li class="book_4"><a href="#"></a></li>
+                    <li class="book_5"><a href="#"></a></li>
+                    <li class="book_6"><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="deco"></div>
+                <ul class="btn_book">
+                  <li class="btn bnt_left_"></li>
+                  <li class="btn bnt_right_"></li>
+                </ul>
+              </div>
+            </article>
+            <!-- // .box_new -->
+            <article class="box_notice">
+              <div class="box_btn">
+                <div class="btn btn_l"></div>
+                <div class="btn btn_r"></div>
+              </div>
+              <div class="box_wrap">
+                <div class="notice_wrap">
+                  <ul class="menu_notice">
+                    <li>
+                      <dl>
+                        <dt class="icon_1" title="공지사항"><button type="button"><span class="hidden">공지사항</span></button></dt>
+                        <dd>
+                          <dl class="notice_contain">
+                            <dt>공지사항</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">9월 신용카드 무이자 안내</a></li>
+                                <li><a href="#">[채용공고] 음반DVD팀 DB입력 아르바이트</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt class="icon_2" title="빠른 서비스"><button type="button"><span class="hidden">빠른 서비스</span></button></dt>
+                        <dd>
+                           <dl class="notice_contain">
+                            <dt>빠른 서비스</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">반품/교환 신청</a></li>
+                                <li><a href="#">증빙서류 신청</a></li>
+                                <li><a href="#">미배송 신고</a></li>
+                                <li><a href="#">입금신고</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt class="icon_3" title="출판사, 판매자를 위한 안내"><button type="button"><span class="hidden">출판사, 판매자를 위한 안내</span></button></dt>
+                        <dd>
+                           <dl class="notice_contain">
+                            <dt>출판사, 판매자를 위한 안내</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">제휴 &amp; 마케팅 안내</a></li>
+                                <li><a href="#">출판사/공급사 안내</a></li>
+                                <li><a href="#">광고 안내</a></li>
+                                <li><a href="#">판매자 매니저</a></li>
+                                <li><a href="#">학교/기업/기관 대량구매</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt class="icon_4" title="스페셜 서비스"><button type="button"><span class="hidden">스페셜 서비스</span></button></dt>
+                        <dd>
+                           <dl class="notice_contain">
+                            <dt>스페셜 서비스</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">독자북펀드</a></li>
+                                <li><a href="#">알라딘 멤버십</a></li>
+                                <li><a href="#">기프티북</a></li>
+                                <li><a href="#">선물상품권 / 알라딘캐시</a></li>
+                                <li><a href="#">알라딘 US</a></li>
+                                <li><a href="#">알림센터</a></li>
+                                <li><a href="#">품절도서센터</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt class="icon_5" title="가격만족"><button type="button"><span class="hidden">가격만족</span></button></dt>
+                        <dd>
+                           <dl class="notice_contain">
+                            <dt>가격만족</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">2천점 추가 마일리지</a></li>
+                                <li><a href="#">Thanks to 적립금</a></li>
+                                <li><a href="#">최저가격 계산기</a></li>
+                                <li><a href="#">최저가 보상제도</a></li>
+                                <li><a href="#">장기 무이자할부</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt class="icon_6" title="배송 만족"><button type="button"><span class="hidden">배송 만족</span></button></dt>
+                        <dd>
+                           <dl class="notice_contain">
+                            <dt>배송 만족</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">3시 당일배송</a></li>
+                                <li><a href="#">택배기사님, 어디세요?</a></li>
+                                <li><a href="#">편의점 배송</a></li>
+                                <li><a href="#">신간 1권도 무료배송</a></li>
+                                <li><a href="#">수령일 예고제</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt class="icon_7" title="블로그 & SNS"><button type="button"><span class="hidden">블로그와 소셜 네트워크 서비스</span></button></dt>
+                        <dd>
+                          <dl class="notice_contain">
+                            <dt>블로그 &amp; SNS</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">알라딘 북플</a></li>
+                                <li><a href="#">알라딘 서재</a></li>
+                                <li><a href="#">알라딘 트위터</a></li>
+                                <li><a href="#">알라딘 페이스북</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt class="icon_8" title="웹 & 모바일"><button><span class="hidden">웹과 모바일</span></button></dt>
+                        <dd>
+                           <dl class="notice_contain">
+                            <dt>웹 &amp; 모바일</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">Open API</a></li>
+                                <li><a href="#">RSS</a></li>
+                                <li><a href="#">TTB / TTB2</a></li>
+                                <li><a href="#">창작블로그</a></li>
+                                <li><a href="#">모바일/앱</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt class="icon_9" title="제휴서비스"><button type="button"><span class="hidden">제휴서비스</span></button></dt>
+                        <dd>
+                           <dl class="notice_contain">
+                            <dt>제휴서비스</dt>
+                            <dd>
+                              <ul>
+                                <li><a href="#">제휴 할인카드</a></li>
+                                <li><a href="#">한국문화진흥 문화상품권</a></li>
+                                <li><a href="#">아시아나항공 마일리지</a></li>
+                                <li><a href="#">에쓰오일 S포인트</a></li>
+                                <li><a href="#">문화누리카드</a></li>
+                                <li><a href="#">문화누리 전자도서관</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <!-- // .box_notice -->
+            <article class="box_info_ebook">
+              <div class="box_wrap">
+                <h3>e-book이용 안내</h3>
+                <ul class="icon_equipment">
+                  <li><a href="#"><span class="hidden">apple cellphone</span></a></li>
+                  <li><a href="#"><span class="hidden">android cellphone</span></a></li>
+                  <li><a href="#"><span class="hidden">computer</span></a></li>
+                  <li><a href="#"><span class="hidden">crema</span></a></li>
+                </ul>
+                <button type="button" class="btn_more">more</button>
+              </div>
+            </article>
+            <!-- // .box_info_ebook -->
+            <article class="box_map_store">
+              <div class="box_map">
+                <div class="map">
+                  <!-- map이미지 들가는 자리입니다. -->
+                </div>
+              </div>
+              <div class="box_contents">
+                <div class="store_info">
+                  <div class="store_img">
+                    <!-- 매장 사진 -->
+                  </div>
+                  <dl>
+                    <dt>가로수길점</dt>
+                    <dd>
+                      <p>영업 시간 : 09:30~22:00</p>
+                      <p>정기 휴일 : 설날(음력), 추석 당일</p>
+                      <p>주소 : 서울시 강남구 강남대로 152길 45</p>
+                      <p><a href="#">자세히 보기</a></p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </article>
+            <!-- // .box_map_store -->
+            <article class="box_introduce">
+              <div class="box_wrap">
+                <ul>
+                  <li>
+                    <div class="img_icon"></div>
+                    <dl>
+                      <dt>알라딘 중고매장</dt>
+                      <dd>오프라인에서도 <br />
+                      깨끗한 중고 도서들을 만날 수 있습니다.
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <div class="img_icon"></div>
+                    <dl>
+                      <dt>55% 슈퍼 바이백 서비스</dt>
+                      <dd>신간 베스트셀러 구입시<br />
+                      금액의 55%에 해당하는금액으로 알라딘이 <br />
+                      되사는 서비스입니다.
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <div class="img_icon"></div>
+                    <dl>
+                      <dt>서울 3시 당일배송</dt>
+                      <dd>
+                        서울지역은 오후 3시까지 <br />
+                        주문시 당일배송이 가능합니다.
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <!-- // .box_introduce -->
+          </article>
+          <!-- // #contentBox -->
+          <footerBox id="footBox">
+            <nav id="inb">
+              <div class="box_wrap">
+                <ul>
+                  <li><a href="#">회사소개</a></li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">개인정보취급방침</a></li>
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">중고매장</a></li>
+                  <li><a href="#">제휴/마케팅 안내</a></li>
+                  <li><a href="#">판매자 매니저</a></li>
+                  <li><a href="#">출판사/공급사 안내</a></li>
+                  <li><a href="#">광고 안내</a></li>
+                  <li><a href="#">학교/기업/기관 대량구매</a></li>
+                </ul>
+              </div>
+            </nav>
+            <article class="box_foot">
+              <div class="box_wrap">
+                <h2><span class="hidden">알라딘 로고</span></h2>
+                <div class="foot_content">
+                  <div class="top_line">
+                    <h3>(주)알라딘 커뮤니케이션</h3>
+                    <div class="box_sns">
+                      <h4 class="hidden">알라딘 sns계정</h4>
+                      <ul>
+                        <li><a href="#"><span class="hidden">페이스북</span></a></li>
+                        <li><a href="#"><span class="hidden">트위터</span></a></li>
+                        <li><a href="#"><span class="hidden">인스타그램</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="line">
+                    <address>
+                      <p>대표이사 : 조유식 | 고객정보 보호 책임자 : 조유식</p>
+                      <p>FAX : 02-81-23094 | E-mail : privacy@aladin.co.kr</p>
+                      <p>사업자 등록 : <a href="#">201-81-23094</a> | 통신판매업신고 : 중구01520호</p>
+                      <p>(본사) 서울시 중구 서소문로 26 <a href="#">약도</a> | (중고서점) <a href="#">자세히보기</a></p>
+                      <p>Copyright 1999-2017 Aladin Communication Inc.</p>
+                    </address>
+                    <div class="user_service">
+                      <p>1:1고객상담 : 메일로 빠르게 답신드립니다. <a href="#">문의하기</a></p>
+                      <dl>
+                        <dt>ARS 접화상담(발신자 부담) :</dt>
+                        <dd>중고샵 문의 : 02-364-8947 | 일반문의 : 1544-2514</dd>
+                      </dl>
+                      <dl>
+                        <dt>구매안전 에스크로 서비스 :</dt>
+                        <dd>안전거래를 위해 현금 결제 시 이용 가능 <a href="#">서비스가입확인</a></dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </footerBox>
+          <!-- // #footBox -->
+        </div>
+          <script src="../js/jQuery/jquery-3.2.1.min.js"></script>
+          <script src="../js/jQuery/jquery-ui.min.js"></script>
+        <script src="../js/src/main.js"></script>
+      </body>
+    </html>

@@ -1,0 +1,665 @@
+@keyframes example {
+  from {
+    left: 0; }
+  to {
+    left: 20px; } }
+
+#wrap {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden; }
+
+.box_wrap {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto; }
+
+#headBox {
+  width: 100%;
+  height: auto;
+  background-color: #fff; }
+
+#unb {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #4C5C6C; }
+  #unb ul {
+    width: 400px;
+    height: 100%;
+    float: right; }
+    #unb ul > li {
+      width: auto;
+      height: 100%;
+      float: left;
+      margin-right: 25px;
+      line-height: 35px;
+      font-size: 1.25rem;
+      font-weight: bold; }
+      #unb ul > li:last-child {
+        margin-right: 0; }
+      #unb ul > li a {
+        width: 100%;
+        height: 100%;
+        display: block; }
+
+.box_main_head {
+  width: 100%;
+  height: 118px;
+  padding-top: 22px;
+  box-sizing: border-box; }
+  .box_main_head h1 {
+    width: 181px;
+    height: 82px;
+    background-image: url("../../img/header/logo.png");
+    background-repeat: no-repeat;
+    float: left; }
+  .box_main_head form {
+    width: 540px;
+    height: 42px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 56px; }
+    .box_main_head form > fieldset {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .box_main_head form > fieldset #selectBook {
+        width: 100px;
+        height: 20px;
+        font-size: 1rem;
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        z-index: 2000;
+        border: 0; }
+      .box_main_head form > fieldset #searchBook {
+        width: 445px;
+        height: 100%;
+        float: left;
+        border-radius: 21px 0 0 21px;
+        padding-left: 120px;
+        box-sizing: border-box;
+        border: 2px solid #F18C00; }
+      .box_main_head form > fieldset #searchBookBtn {
+        width: 95px;
+        height: 100%;
+        float: left;
+        background-color: #F18C00;
+        font-size: 1.5rem;
+        border: none; }
+
+#gnb {
+  width: 100%;
+  height: 60px;
+  background-color: #4C5C6C;
+  position: relative; }
+  #gnb .box_wrap {
+    padding: 0 10px;
+    box-sizing: border-box; }
+  #gnb ul {
+    width: 100%;
+    height: 100%; }
+    #gnb ul li {
+      width: auto;
+      height: 100%;
+      float: left;
+      margin-right: 34px;
+      color: #fff;
+      font-size: 1.5rem;
+      line-height: 60px;
+      font-weight: bold; }
+      #gnb ul li:first-child {
+        width: 152px;
+        height: 62px;
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        margin-left: -71px;
+        z-index: 2000;
+        background-image: url("../../img/gnb_menu.png");
+        background-repeat: no-repeat;
+        cursor: pointer; }
+        #gnb ul li:first-child button {
+          width: 36px;
+          height: 23px;
+          border-bottom: 4px solid #fff;
+          margin-left: 56px;
+          position: relative;
+          transition: all 500ms; }
+          #gnb ul li:first-child button::before {
+            content: " ";
+            display: block;
+            width: 36px;
+            height: 4px;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            background-color: #fff;
+            transition: all 500ms; }
+          #gnb ul li:first-child button::after {
+            content: " ";
+            display: block;
+            width: 36px;
+            height: 4px;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: #fff;
+            transition: all 500ms; }
+          #gnb ul li:first-child button.button_deco {
+            border: 0; }
+          #gnb ul li:first-child button.button_deco::before {
+            transform: rotate(45deg);
+            top: 20px; }
+          #gnb ul li:first-child button.button_deco::after {
+            transform: rotate(-45deg);
+            top: 20px; }
+      #gnb ul li:last-child {
+        margin-right: 0; }
+
+#footBox {
+  width: 100%;
+  height: auto;
+  background-color: #0af; }
+
+#inb {
+  width: 100%;
+  height: 50px;
+  background-color: #4C5C6C; }
+  #inb .box_wrap {
+    width: 1130px; }
+  #inb ul {
+    width: 100%;
+    height: 100%; }
+    #inb ul li {
+      width: auto;
+      height: 100%;
+      float: left;
+      font-size: 1rem;
+      color: #fff;
+      line-height: 50px;
+      margin-right: 22px;
+      position: relative; }
+      #inb ul li::after {
+        content: " ";
+        width: 0;
+        height: 14px;
+        display: block;
+        border-right: 1px solid #fff;
+        position: absolute;
+        top: 19px;
+        right: -11px; }
+      #inb ul li:last-child {
+        margin-right: 0; }
+      #inb ul li:last-child::after {
+        display: none; }
+
+.box_foot {
+  width: 100%;
+  height: 300px;
+  background-color: #a8b5c2;
+  padding-top: 60px;
+  box-sizing: border-box; }
+  .box_foot .box_wrap {
+    padding: 0 10px;
+    box-sizing: border-box; }
+  .box_foot h2 {
+    width: 140px;
+    height: 110px;
+    float: left;
+    background-image: url("../../img/footer/logo.png");
+    background-repeat: no-repeat;
+    margin-top: 48px; }
+  .box_foot .foot_content {
+    width: 780px;
+    height: 170px;
+    float: left;
+    margin-left: 20px; }
+    .box_foot .foot_content a {
+      text-decoration: underline;
+      color: #0000C0; }
+  .box_foot .top_line {
+    width: 756px;
+    height: 50px; }
+    .box_foot .top_line h3 {
+      width: auto;
+      height: auto;
+      float: left;
+      font-size: 1.125rem; }
+  .box_foot .line {
+    width: 780px;
+    height: 140px;
+    font-size: 0.875rem; }
+    .box_foot .line address {
+      width: auto;
+      height: auto;
+      float: left;
+      margin-right: 50px; }
+      .box_foot .line address p {
+        margin-bottom: 8px; }
+    .box_foot .line .user_service {
+      width: auto;
+      height: auto;
+      float: left; }
+      .box_foot .line .user_service p, .box_foot .line .user_service dt, .box_foot .line .user_service dd {
+        margin-bottom: 8px; }
+      .box_foot .line .user_service dt {
+        font-weight: bold; }
+  .box_foot .box_sns {
+    width: 168px;
+    height: 48px;
+    float: right;
+    margin-top: -28px; }
+    .box_foot .box_sns ul {
+      width: 100%;
+      height: 100%; }
+      .box_foot .box_sns ul li {
+        width: 48px;
+        height: 48px;
+        margin-right: 12px;
+        float: left;
+        background-image: url("../../img/footer/sns.png");
+        background-repeat: no-repeat; }
+        .box_foot .box_sns ul li:nth-child(1) {
+          background-position: 10px center; }
+        .box_foot .box_sns ul li:nth-child(2) {
+          background-position: -44px center; }
+        .box_foot .box_sns ul li:nth-child(3) {
+          background-position: -100px center; }
+        .box_foot .box_sns ul li:last-child {
+          margin-right: 0; }
+        .box_foot .box_sns ul li a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+
+#addBanner {
+  width: 100%;
+  height: 600px;
+  position: relative; }
+  #addBanner .wrap_banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    #addBanner .wrap_banner ul {
+      width: 400%;
+      height: 100%; }
+      #addBanner .wrap_banner ul li {
+        width: 25%;
+        height: 100%;
+        float: left;
+        position: relative;
+        background-position: center;
+        background-size: cover; }
+        #addBanner .wrap_banner ul li.bn_1 {
+          background-image: url("../../img/main/event/event_1.png");
+          background-repeat: no-repeat; }
+        #addBanner .wrap_banner ul li.bn_2 {
+          background-image: url("../../img/main/event/event_2.png");
+          background-repeat: no-repeat; }
+        #addBanner .wrap_banner ul li.bn_3 {
+          background-image: url("../../img/main/event/event_3.png");
+          background-repeat: no-repeat; }
+        #addBanner .wrap_banner ul li.bn_4 {
+          background-image: url("../../img/main/event/event_4.png");
+          background-repeat: no-repeat; }
+      #addBanner .wrap_banner ul a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: 500; }
+  #addBanner .box_btn {
+    width: 390px;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -195px;
+    bottom: 108px;
+    z-index: 1000; }
+    #addBanner .box_btn .btn_indicate {
+      width: 254px;
+      float: left;
+      margin: 14px 40px 0 40px; }
+      #addBanner .box_btn .btn_indicate li {
+        width: 40px;
+        height: 40px;
+        background-color: #E4DBCF;
+        float: left;
+        margin-right: 30px;
+        border-radius: 20px; }
+        #addBanner .box_btn .btn_indicate li:hover {
+          background-color: #F18C00; }
+        #addBanner .box_btn .btn_indicate li:first-child {
+          background-color: #F18C00; }
+        #addBanner .box_btn .btn_indicate li:last-child {
+          margin-right: 0; }
+        #addBanner .box_btn .btn_indicate li > button {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px; }
+    #addBanner .box_btn div {
+      width: 28px;
+      height: 68px;
+      cursor: pointer;
+      background-image: url("../../img/btn_event.png");
+      background-repeat: no-repeat; }
+    #addBanner .box_btn .btn_left {
+      float: left;
+      background-position: left top; }
+      #addBanner .box_btn .btn_left:hover {
+        background-position: left bottom; }
+    #addBanner .box_btn .btn_right {
+      float: right;
+      background-position: right top; }
+      #addBanner .box_btn .btn_right:hover {
+        background-position: right bottom; }
+
+.intro_book {
+  width: 100%;
+  height: 500px; }
+
+.box_book_img {
+  width: 45%;
+  height: 100%;
+  background-color: #E4DBCF;
+  float: left; }
+
+.book_img {
+  width: 432px;
+  height: 100%;
+  float: right;
+  margin-top: 76px;
+  padding-left: 80px;
+  box-sizing: border-box; }
+  .book_img .img {
+    width: 200px;
+    height: 284px;
+    background-image: url("../../img/sub_interior/intor_book.png");
+    background-repeat: no-repeat; }
+    .book_img .img a {
+      width: 100%;
+      height: 100%;
+      display: block; }
+  .book_img h4 {
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-top: 30px; }
+
+.box_book_content {
+  width: 55%;
+  height: 100%;
+  background-color: #4C5C6C;
+  float: right;
+  position: relative; }
+  .box_book_content::before {
+    content: " ";
+    display: block;
+    width: 84px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: -82px;
+    background-image: url("../../img/sub_interior/intro_bg.png");
+    background-repeat: no-repeat;
+    z-index: 100; }
+
+.book_content {
+  width: 528px;
+  height: 100%;
+  float: left;
+  color: #fff;
+  margin: 100px 10px 0 60px;
+  box-sizing: border-box; }
+  .book_content > dl {
+    width: 420px;
+    height: 320px; }
+    .book_content > dl > dt {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .book_content > dl > dd {
+      font-size: 1.125rem; }
+      .book_content > dl > dd > p:first-of-type {
+        margin-bottom: 6px;
+        line-height: 2; }
+
+.book_show {
+  width: 100%;
+  height: 750px;
+  background-image: url("../../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .book_show .box_wrap {
+    padding: 145px 10px 0;
+    box-sizing: border-box;
+    position: relative; }
+  .book_show h3 {
+    width: auto;
+    height: 40px;
+    margin-left: 390px;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    position: relative; }
+    .book_show h3::before {
+      content: " ";
+      display: block;
+      width: 192px;
+      height: 14px;
+      position: absolute;
+      background-image: url("../../img/title_deco.png");
+      background-repeat: no-repeat;
+      top: 20px;
+      left: -212px; }
+    .book_show h3::after {
+      content: " ";
+      display: block;
+      width: 192px;
+      height: 14px;
+      position: absolute;
+      background-image: url("../../img/title_deco.png");
+      background-repeat: no-repeat;
+      top: 20px;
+      left: 175px;
+      background-position: right; }
+  .book_show .list_wrap {
+    width: 950px;
+    height: 330px;
+    overflow: hidden; }
+  .book_show .list_book {
+    width: 1900px;
+    height: 100%; }
+    .book_show .list_book li {
+      width: 300px;
+      height: 330px;
+      float: left;
+      margin-right: 20px;
+      box-shadow: 0.1rem 0.1rem 0.2rem rgba(85, 85, 85, 0.7);
+      background-size: cover;
+      background-position: center;
+      border-radius: 150px; }
+      .book_show .list_book li:last-child {
+        margin-right: 0; }
+      .book_show .list_book li a {
+        width: 100%;
+        height: 100%;
+        display: block; }
+  .book_show .deco {
+    width: 1014px;
+    height: 34px;
+    position: absolute;
+    top: 570px;
+    left: 50%;
+    margin-left: -507px;
+    z-index: 100;
+    box-shadow: 0.15rem 0.15rem 0.3rem rgba(85, 85, 85, 0.7);
+    background-image: url("../../img/book_deco.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .book_show .btn_book {
+    width: 162px;
+    height: 0;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    margin-left: -81px; }
+    .book_show .btn_book .btn {
+      width: 52px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: rgba(51, 51, 51, 0.7);
+      float: left;
+      margin-right: 20px;
+      cursor: pointer;
+      background-image: url("../../img/btn_book.png");
+      background-repeat: no-repeat; }
+      .book_show .btn_book .btn:hover {
+        background-color: #F18C00; }
+    .book_show .btn_book .bnt_left_ {
+      background-position: 10px center; }
+    .book_show .btn_book .bnt_right_ {
+      background-position: -62px center;
+      margin-right: 0; }
+
+.box_recommend {
+  background-position: center; }
+  .box_recommend .book_1 {
+    background-image: url("../../img/sub_interior/recommend_book/reco_1.jpg");
+    background-repeat: no-repeat; }
+  .box_recommend .book_2 {
+    background-image: url("../../img/sub_interior/recommend_book/reco_2.jpg");
+    background-repeat: no-repeat; }
+  .box_recommend .book_3 {
+    background-image: url("../../img/sub_interior/recommend_book/reco_3.jpg");
+    background-repeat: no-repeat; }
+  .box_recommend .book_4 {
+    background-image: url("../../img/sub_interior/recommend_book/reco_4.jpg");
+    background-repeat: no-repeat; }
+  .box_recommend .book_5 {
+    background-image: url("../../img/sub_interior/recommend_book/reco_5.jpg");
+    background-repeat: no-repeat; }
+  .box_recommend .book_6 {
+    background-image: url("../../img/sub_interior/recommend_book/reco_6.jpg");
+    background-repeat: no-repeat; }
+
+.box_new .list_book {
+  background-position: center; }
+  .box_new .list_book .book_1 {
+    background-image: url("../../img/sub_interior/new_book/new_1.jpg");
+    background-repeat: no-repeat; }
+  .box_new .list_book .book_2 {
+    background-image: url("../../img/sub_interior/new_book/new_2.jpg");
+    background-repeat: no-repeat; }
+  .box_new .list_book .book_3 {
+    background-image: url("../../img/sub_interior/new_book/new_3.jpg");
+    background-repeat: no-repeat; }
+
+#btnMore {
+  height: 60px;
+  bottom: 60px;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 60px; }
+  #btnMore:hover {
+    background-color: #F18C00; }
+  #btnMore:hover > a {
+    color: #fff; }
+
+.aladin_library {
+  width: 100%;
+  height: 900px; }
+  .aladin_library .box_wrap {
+    padding-top: 148px;
+    box-sizing: border-box; }
+  .aladin_library h3 {
+    width: auto;
+    height: 40px;
+    margin-left: 390px;
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+    position: relative; }
+    .aladin_library h3::before {
+      content: " ";
+      display: block;
+      width: 192px;
+      height: 14px;
+      position: absolute;
+      background-image: url("../../img/title_deco.png");
+      background-repeat: no-repeat;
+      top: 20px;
+      left: -212px; }
+    .aladin_library h3::after {
+      content: " ";
+      display: block;
+      width: 192px;
+      height: 14px;
+      position: absolute;
+      background-image: url("../../img/title_deco.png");
+      background-repeat: no-repeat;
+      top: 20px;
+      left: 220px;
+      background-position: right; }
+  .aladin_library .aladin_book {
+    width: 562px;
+    height: 265px;
+    margin: 0 auto; }
+    .aladin_library .aladin_book .book_img {
+      width: 160px;
+      height: 100%;
+      float: left;
+      padding: 0;
+      background-image: url("../../img/sub_interior/library/intro.png");
+      background-repeat: no-repeat;
+      margin: 0; }
+    .aladin_library .aladin_book .book_content {
+      width: 360px;
+      height: 100%;
+      float: left;
+      margin: 0;
+      margin-left: 30px; }
+      .aladin_library .aladin_book .book_content dl {
+        width: 100%;
+        height: 100%;
+        color: #333333; }
+        .aladin_library .aladin_book .book_content dl dt {
+          margin-bottom: 10px;
+          color: #4C5C6C; }
+  .aladin_library .book_grade .books_list {
+    float: left; }
+  .aladin_library .book_grade .grade {
+    float: left; }
+  .aladin_library .box_review {
+    width: auto;
+    height: auto;
+    margin-top: 54px; }
+    .aladin_library .box_review > ul {
+      width: 660px;
+      height: 50px;
+      margin: 0 auto; }
+      .aladin_library .box_review > ul > li {
+        width: 320px;
+        height: 100%;
+        float: left;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid #F18C00;
+        box-sizing: border-box;
+        border-radius: 12px;
+        transition: all 300ms;
+        font-size: 1.5rem;
+        font-weight: bold; }
+        .aladin_library .box_review > ul > li:hover {
+          background-color: #333333; }
+        .aladin_library .box_review > ul > li:hover > a {
+          color: #F18C00; }
+        .aladin_library .box_review > ul > li:first-child {
+          margin-right: 20px; }

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+    <html lang="ko-KR">
+      <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--[if lte IE 9]>
+          <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+           <script src="../ie/ie7/IE9.js"></script>
+           <script src="../ie/css3PIE/PIE_IE9.js"></script>
+          <![endif]-->
+          <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+          <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+          <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
+          <link rel="stylesheet" type="text/css" href="../css/src/sub_abroad.css" />
+          <script src="../js/jQuery/jquery-3.2.1.min.js"></script>
+          <script src="../js/jQuery/jquery-ui.min.js"></script>
+          <title>알라딘</title>
+      </head>
+      <body>
+        <div id="wrap">
+          <header id="headBox">
+            <nav id="unb">
+              <div class="box_wrap"> 
+              <!-- .box_wrap은 가로 사이즈용 태그입니다. -->
+                <ul>
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">마이페이지</a></li>
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">장바구니</a></li>
+                </ul>
+              </div>
+            </nav>
+            <article class="box_main_head">
+              <div class="box_wrap">
+                <h1 index="0"><a href="main.html"><span class="hidden">알라딘</span></a></h1>
+                <form action="#" method="get">
+                  <fieldset>
+                    <legend></legend>
+                    <!-- 여기에 셀렉태그 -->
+                    <label for="selectBook">
+                      <span class="hidden">
+                        검색할 도서의 종류를 고르세요.
+                      </span>
+                    </label>
+                    <select name="selectBook" id="selectBook">
+                      <option value="통합검색">통합검색</option>
+                      <option value="국내도서">국내도서</option>
+                      <option value="해외도서">해외도서</option>
+                      <option value="ebook">ebook</option>
+                      <option value="중고도서">중고도서</option>
+                    </select>
+                    <label for="searchBook"><span class="hidden">원하는 도서를 검색하세요.</span></label>
+                    <input type="search" name="searchBook" id="searchBook" />
+                    <label for="searchBookBtn"><span class="hidden">검색 버튼입니다.</span></label>
+                    <button type="button" id="searchBookBtn">검색</button>
+                  </fieldset>
+                </form>
+              </div>
+            </article>
+            <nav id="gnb">
+              <div class="box_wrap">
+                <ul>
+                  <li id="menuButton"><button type="button" id="buttonDeco"><span class="hidden">menu</span></button></li>
+                  <li><a href="sub_interior.html">국내도서</a></li>
+                  <li><a href="sub_abroad.html">해외도서</a></li>
+                  <li><a href="sub_ebook.html">ebook</a></li>
+                  <li><a href="sub_used.html">중고매장</a></li>
+                  <li><a href="#">커피</a></li>
+                  <li><a href="#">음반/DVD</a></li>
+                  <li><a href="#">알라딘굿즈</a></li>
+                  <li><a href="#">북플/서재</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <!-- // #headBox -->
+          <section id="addBanner">
+            <div class="wrap_banner">
+              <ul>
+                <li class="bn_1"><a href="#"></a></li>
+                <li class="bn_2"><a href="#"></a></li>
+                <li class="bn_3"><a href="#"></a></li>
+                <li class="bn_4"><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="box_btn">
+              <div class="btn_left"></div>
+              <ul class="btn_indicate">
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+              </ul>
+              <div class="btn_right"></div>
+            </div>
+          </section>
+          <!-- // #addBanner -->
+          <article id="contentBox">
+            <article class="box_sale book_show">
+              <div class="box_wrap">
+                <h3>특가도서</h3>
+                <div class="list_wrap">
+                  <ul class="list_book">
+                    <li class="book_1"><a href="#"></a></li>
+                    <li class="book_2"><a href="#"></a></li>
+                    <li class="book_3"><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div id="btnMore" class="btn_book inner_a">
+                  <a href="#">더보기</a>
+                </div>
+              </div>
+            </article>
+            <!-- ______특가도서_______________ -->
+            <article class="ad_book"></article>
+            <!-- 책 광고_____________ -->
+            <article class="box_new book_show">
+              <div class="box_wrap">
+                <h3>새로 나온 도서</h3>
+                <div class="list_wrap">
+                  <ul class="list_book">
+                    <li class="book_1"><a href="#"></a></li>
+                    <li class="book_2"><a href="#"></a></li>
+                    <li class="book_3"><a href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <!-- 새로나온 도서 -->
+            <article class="box_recommend book_show">
+              <div class="box_wrap">
+                <h3>추천도서</h3>
+                <div class="list_wrap">
+                  <ul class="list_book">
+                    <li class="book_1"><a href="#"></a></li>
+                    <li class="book_2"><a href="#"></a></li>
+                    <li class="book_3"><a href="#"></a></li>
+                    <li class="book_4"><a href="#"></a></li>
+                    <li class="book_5"><a href="#"></a></li>
+                    <li class="book_6"><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="deco"></div>
+                <ul class="btn_book">
+                  <li class="btn bnt_left_"></li>
+                  <li class="btn bnt_right_"></li>
+                </ul>
+              </div>
+            </article>
+            <!-- // .box_recommend -->
+          </article>
+          <!-- // #contentBox -->
+          <footerBox id="footBox">
+            <nav id="inb">
+              <div class="box_wrap">
+                <ul>
+                  <li><a href="#">회사소개</a></li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">개인정보취급방침</a></li>
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">중고매장</a></li>
+                  <li><a href="#">제휴/마케팅 안내</a></li>
+                  <li><a href="#">판매자 매니저</a></li>
+                  <li><a href="#">출판사/공급사 안내</a></li>
+                  <li><a href="#">광고 안내</a></li>
+                  <li><a href="#">학교/기업/기관 대량구매</a></li>
+                </ul>
+              </div>
+            </nav>
+            <article class="box_foot">
+              <div class="box_wrap">
+                <h2><span class="hidden">알라딘 로고</span></h2>
+                <div class="foot_content">
+                  <div class="top_line">
+                    <h3>(주)알라딘 커뮤니케이션</h3>
+                    <div class="box_sns">
+                      <h4 class="hidden">알라딘 sns계정</h4>
+                      <ul>
+                        <li><a href="#"><span class="hidden">페이스북</span></a></li>
+                        <li><a href="#"><span class="hidden">트위터</span></a></li>
+                        <li><a href="#"><span class="hidden">인스타그램</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="line">
+                    <address>
+                      <p>대표이사 : 조유식 | 고객정보 보호 책임자 : 조유식</p>
+                      <p>FAX : 02-81-23094 | E-mail : privacy@aladin.co.kr</p>
+                      <p>사업자 등록 : <a href="#">201-81-23094</a> | 통신판매업신고 : 중구01520호</p>
+                      <p>(본사) 서울시 중구 서소문로 26 <a href="#">약도</a> | (중고서점) <a href="#">자세히보기</a></p>
+                      <p>Copyright 1999-2017 Aladin Communication Inc.</p>
+                    </address>
+                    <div class="user_service">
+                      <p>1:1고객상담 : 메일로 빠르게 답신드립니다. <a href="#">문의하기</a></p>
+                      <dl>
+                        <dt>ARS 접화상담(발신자 부담) :</dt>
+                        <dd>중고샵 문의 : 02-364-8947 | 일반문의 : 1544-2514</dd>
+                      </dl>
+                      <dl>
+                        <dt>구매안전 에스크로 서비스 :</dt>
+                        <dd>안전거래를 위해 현금 결제 시 이용 가능 <a href="#">서비스가입확인</a></dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </footerBox>
+          <!-- // #footBox -->
+        </div>
+        <!-- <script src="../js/src/main.js"></script> -->
+      </body>
+    </html>

@@ -1,0 +1,42 @@
+@import '../_base/base.scss';
+@import '../_base/mixin.scss';
+
+@import '../_copy/header.scss';
+@import '../_copy/footer.scss';
+
+//책 리스트 --------------------------------------
+      .book_show{width: 100%; height: 750px; @include bgImg($f:'bg.png'); background-position: center; background-size: cover;
+        .box_wrap{padding: 145px 10px 0; box-sizing:border-box; position: relative;}
+        h3{width: auto; height: 40px; margin-left: 390px; font-size: 40/16 +rem; margin-bottom: 60px; position: relative;
+          &::before{@include pseudo($w:192px, $h:14px); @include bgImg($f:'title_deco.png'); top:20px; left:-212px;}
+          &::after{@include pseudo($w:192px, $h:14px); @include bgImg($f:'title_deco.png'); top: 20px; left: 175px; background-position: right;}
+        }//h3
+        .list_wrap{width: 950px; height: 330px; overflow: hidden; 
+        }
+        .list_book{width: 940 * 2 + 20 + px; height: 100%;
+          li{width: 300px; height: 330px; float: left; margin-right: 20px; box-shadow: 0.1rem 0.1rem 0.2rem rgba(map-get($color,shadow), 0.7); background-size: cover; background-position: center;
+            &:last-child{margin-right: 0;}
+            a{width: 100%; height: 100%; display: block;}
+          }//li
+        }//.list_book
+        .deco{width: 1014px; height: 34px; position: absolute; top: 570px; left:50%; margin-left: -507px; z-index: 100; box-shadow: 0.15rem 0.15rem 0.3rem rgba(#555,0.7); @include bgImg($f:'book_deco.png'); background-size: cover;}
+        .btn_book{width: 162px; height: 0; position: absolute; bottom: 120px; left: 50%; margin-left: -81px;
+          .btn{width: 52px; height: 60px; border-radius: 10px; background-color: rgba(map-get($color,black),0.7); float: left; margin-right: 20px; cursor: pointer; @include bgImg($f:'btn_book.png');
+            &:hover{background-color: map-get($color,point1);}
+          }//.btn
+          .bnt_left_{background-position: 10px center;}
+          .bnt_right_{background-position: -62px center; margin-right: 0;}
+        }//.btn_book
+      }//.book_show
+    // 추천, 신간
+    .box_recommend{background-position: center;
+      @for $i from 1 through 6{
+        .book_#{$i}{@include bgImg($f:'main/recommend_book/reco_'+ $i +'.png');}
+      }//@for
+    }
+    //신간
+    .box_new .list_book{background-position: center;
+      @for $i from 1 through 6{
+        .book_#{$i}{@include bgImg($f:'main/new_book/new_'+ $i +'.png');}
+      }//@for
+    }//.box_new .list_book

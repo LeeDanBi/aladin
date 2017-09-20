@@ -1,0 +1,110 @@
+@import '../_base/base.scss';
+@import '../_base/mixin.scss';
+
+@import '../_copy/header.scss';
+@import '../_copy/footer.scss';
+
+  #addBanner{width: 100%; height: 600px; position: relative; border-bottom: 2px solid map-get($color,primary);
+    .wrap_banner{width: 100%; height: 100%; overflow: hidden;
+      ul{width: 400%; height: 100%;
+        li{width: 25%; height: 100%; float: left; position: relative; background-position: center; background-size: cover;
+          @for $i from 1 through 4{
+            &.bn_#{$i}{@include bgImg($f:'main/event/event_' + $i + '.png');}
+          }//@for
+        }//li
+        a{width: 100%; height: 100%; display: block; position: absolute; z-index: 500;}
+      }//ul
+    }//.wrap_banner
+    .box_btn{width: 390px; height: 0; position: absolute; left: 50%; margin-left: -195px; bottom: 40 + 68 + px; z-index: 1000;
+      .btn_indicate{width: 254px; float: left; margin: 14px 40px 0 40px;
+        li{width: 40px; height: 40px; background-color: map-get($color,sub1); float: left; margin-right: 30px; border-radius: 20px;
+          &:hover{background-color: map-get($color,point1);}
+          &:first-child{background-color: map-get($color,point1);}
+          &:last-child{margin-right: 0;}
+          > button{width: 100%; height: 100%; border-radius: 20px}
+        }//li
+      }//ul.btn_indicate
+      div{width: 28px; height: 68px; cursor: pointer; @include bgImg($f:'btn_event.png');}
+      .btn_left{float: left; background-position: left top;
+        &:hover{background-position: left bottom;}
+      }//.btn_left
+      .btn_right{float: right; background-position: right top;
+        &:hover{background-position: right bottom;}
+      }//.btn_right
+    }//box_btn
+  }//#addBanner
+// //#addBanner-___________________
+  .box_Einfo{width: 100%; height: 500px;
+    .box_wrap{padding: 94px 10px 0; box-sizing: border-box;}
+      h3{width: auto; height: 40px; margin-left: 390px; font-size: 40/16 +rem; margin-bottom: 60px; position: relative;
+          &::before{@include pseudo($w:192px, $h:14px); @include bgImg($f:'title_deco.png'); top:20px; left:-212px;}
+          &::after{@include pseudo($w:192px, $h:14px); @include bgImg($f:'title_deco.png'); top: 20px; left: 175px; background-position: right;}
+        }//h3
+      ul{width: 100%; height: 220px;
+        li{width: 220px; height: 220px; float: left; background-color: map-get($color,primary); margin-right: 20px; border-radius: 110px;
+          &:last-child{margin-right: 0;}
+        }//li
+      }//ul
+    }//.box_Einfo
+  //책 리스트 --------------------------------------
+      .book_show{width: 100%; height: 750px; @include bgImg($f:'bg.png'); background-position: center; background-size: cover;
+        .box_wrap{padding: 145px 10px 0; box-sizing:border-box; position: relative;}
+        h3{width: auto; height: 40px; margin-left: 390px; font-size: 40/16 +rem; margin-bottom: 60px; position: relative;
+          &::before{@include pseudo($w:192px, $h:14px); @include bgImg($f:'title_deco.png'); top:20px; left:-212px;}
+          &::after{@include pseudo($w:192px, $h:14px); @include bgImg($f:'title_deco.png'); top: 20px; left: 175px; background-position: right;}
+        }//h3
+        .list_wrap{width: 950px; height: 330px; overflow: hidden; 
+        }
+        .list_book{width: 940 * 2 + 20 + px; height: 100%;
+          li{width: 300px; height: 330px; float: left; margin-right: 20px; box-shadow: 0.1rem 0.1rem 0.2rem rgba(map-get($color,shadow), 0.7); background-size: cover; background-position: center;
+            &:last-child{margin-right: 0;}
+            a{width: 100%; height: 100%; display: block;}
+          }//li
+        }//.list_book
+        .deco{width: 1014px; height: 34px; position: absolute; top: 570px; left:50%; margin-left: -507px; z-index: 100; box-shadow: 0.15rem 0.15rem 0.3rem rgba(#555,0.7); @include bgImg($f:'book_deco.png'); background-size: cover;}
+        .btn_book{width: 162px; height: 0; position: absolute; bottom: 120px; left: 50%; margin-left: -81px;
+          .btn{width: 52px; height: 60px; border-radius: 10px; background-color: rgba(map-get($color,black),0.7); float: left; margin-right: 20px; cursor: pointer; @include bgImg($f:'btn_book.png');
+            &:hover{background-color: map-get($color,point1);}
+          }//.btn
+          .bnt_left_{background-position: 10px center;}
+          .bnt_right_{background-position: -62px center; margin-right: 0;}
+        }//.btn_book
+      }//.book_show
+  // _______________________________
+
+  .box_notice{width: 100%; height: 700px; background-color: map-get($color,notice); padding-top: 130px; box-sizing: border-box; position: relative;
+      .box_btn{width: 960px; height: 0; position: absolute; top:150px; left:50%; margin-left: -480px; z-index: 500;
+        .btn{width: 40px; height: 76px; @include bgImg($f:'btn_notice.png'); cursor: pointer;}
+        .btn_l{float: left; background-position: left center;}
+        .btn_r{float: right; background-position: right center;}
+      }//.box_wrap
+    }//.box_notice
+      .box_wrap{position: relative;}
+      .notice_wrap{width: 818px; height: 124px; overflow: hidden; margin-left: 72px; padding-top: 2px;}
+      .menu_notice{width: 1512px; height: 120px;
+        > li{width: 120px; height: 120px; border-radius: 60px; float: left; margin-right: 54px;
+          &:nth-child(1) > dl > dt {background-color: map-get($color,point1);}
+          &:nth-child(1) > dl > dd {display: block;} //임시 a
+          &:nth-child(3)  .notice_contain > dt {font-size: 25/16 +rem;}
+          &:last-child{margin-right: 0;}
+          > dl{width: 100%; height: 100%;
+            //icon dt
+            > dt{width: 100%; height: 100%; background-position: center; background-color: map-get($color,subgray2); border-radius: 60px;
+              &:hover{background-color: map-get($color,point1);}
+              > button{width: 100%; height: 100%;}
+            }//dt
+            > dd{width: 960px; height: 250px; position: absolute; top: 180px; left: 0; background-color: map-get($color,subgray); border-radius: 38px; display: none; //임시 a
+              &::before{content:" "; width: 84px; height: 32px; display: block; @include bgImg($f:'top_arrow.png'); position: absolute; top:-31px; left: 90px;}
+            }//dd
+          }//dl
+        }//li
+      }//.menu_notice
+      .notice_contain{width: 100%; height: 100%; padding-top: 60px; padding-left: 34px; box-sizing: border-box;
+        > dt{width: auto; height: 130px; padding-right: 20px; padding-left: 20px; float: left; line-height: 130px; text-align: center; margin-right: 40px; border-right: 1px solid map-get($color,primary); font-size: 40/16 + rem; font-weight: bold;}
+        > dd{width: 534px; height: 150px; float: left; font-size: 18/16 + rem; overflow: auto;}
+      }//.notice_contain
+      //icon 이미지 넣기
+      @for $i from 1 through 9{
+        .icon_#{$i}{@include bgImg($f:'main/notice/icon_'+ $i +'.png');}
+      }//@for
+    // .box_notice
