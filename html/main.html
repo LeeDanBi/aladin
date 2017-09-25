@@ -12,8 +12,7 @@
           <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
           <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
           <link rel="stylesheet" type="text/css" href="../css/src/main.css" />
-          <script src="../js/jquery/jquery-3.2.1.min.js"></script>
-          <script src="../js/jquery/jquery-ui.min.js"></script>
+
           <title>알라딘</title>
       </head>
       <body>
@@ -84,12 +83,12 @@
               </ul>
             </div>
             <!-- 낙엽 효과 넣은 것 시작 -->
-            <div class="effect_maple maple_1_l"></div>
-            <div class="effect_maple maple_1_r"></div>
-            <div class="effect_maple maple_2_l"></div>
-            <div class="effect_maple maple_2_r"></div>
-            <div class="effect_maple maple_3_l"></div>
-            <div class="effect_maple maple_3_r"></div>
+            <div class="effect_maple maple_1_l"><!-- 효과 디자인 --></div>
+            <div class="effect_maple maple_1_r"><!-- 효과 디자인 --></div>
+            <div class="effect_maple maple_2_l"><!-- 효과 디자인 --></div>
+            <div class="effect_maple maple_2_r"><!-- 효과 디자인 --></div>
+            <div class="effect_maple maple_3_l"><!-- 효과 디자인 --></div>
+            <div class="effect_maple maple_3_r"><!-- 효과 디자인 --></div>
             <!-- 낙엽 효과 넣은 것 끝 -->
             <div class="box_btn">
               <div class="btn_left"></div>
@@ -118,7 +117,7 @@
                       </div>
                       <dl>
                         <dt>검색조건</dt>
-                        <dd>
+                        <dd class="box_con">
                           <div class="box_check">
                             <input type="checkbox" value="제목" id="titleName" name="serch_con" />
                             <label for="titleName">제목<span class="hidden">체크박스입니다.</span></label>
@@ -151,68 +150,107 @@
                       </dl>
                       <dl>
                         <dt>출간일</dt>
-                        <dd>
+                        <dd class="box_publish">
                           <div class="box_radio">
                             <input type="radio" name="release_date" id="month3" value="3개월" />
-                            <label for="month3">3개월</label>
+                            <label for="month3">
+                              <i class="dot"></i>
+                              <span>3개월</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="release_date" id="month12" value="12개월" />
-                            <label for="month12">12개월</label>
+                            <label for="month12">
+                              <i class="dot"></i>
+                              <span>12개월</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="release_date" id="month24" value="24개월" />
-                            <label for="month24">24개월</label>
+                            <label for="month24">
+                              <i class="dot"></i>
+                              <span>24개월</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="release_date" id="month36" value="36개월" />
-                            <label for="month36">36개월</label>
+                            <label for="month36">
+                              <i class="dot"></i>
+                              <span>36개월</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="release_date" id="month60" value="60개월" />
-                            <label for="month60">60개월</label>
+                            <label for="month60">
+                              <i class="dot"></i>
+                              <span>60개월</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="release_date" id="monthAll" value="전체" />
-                            <label for="monthAll">전체</label>
+                            <label for="monthAll">
+                              <i class="dot"></i>
+                              <span>전체</span>
+                            </label>
                           </div>
                         </dd>
                       </dl>
                       <dl>
                         <dt>재고상태</dt>
-                        <dd>
+                        <dd class="box_stock">
                           <div class="box_radio">
                             <input type="radio" name="stock" id="notStock" value="품절/절판제외" />
-                            <label for="notStock">품절/절판제외</label>
+                            <label for="notStock">
+                              <i class="dot"></i>
+                              <span>품절/절판제외</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="stock" id="notOPrint" value="절판제외" />
-                            <label for="notOPrint">절판제외</label>
+                            <label for="notOPrint">
+                              <i class="dot"></i>
+                              <span>절판제외</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="stock" id="stockAll" value="전체" />
-                            <label for="stockAll">전체</label>
+                            <label for="stockAll">
+                              <i class="dot"></i>
+                              <span>전체</span>
+                            </label>
                           </div>
                         </dd>
                       </dl>
                       <dl>
                         <dt>판매가</dt>
-                        <dd>
+                        <dd class="box_price">
                            <div class="box_radio">
                             <input type="radio" name="price" id="hundred10" value="1만원" />
-                            <label for="hundred10">1만원</label>
+                            <label for="hundred10">
+                              <i class="dot"></i>
+                              <span>1만원</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="price" id="hundred20" value="2만원" />
-                            <label for="hundred20">2만원</label>
+                            <label for="hundred20">
+                              <i class="dot"></i>
+                              <span>2만원</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="price" id="hundred30" value="3만원" />
-                            <label for="hundred30">3만원</label>
+                            <label for="hundred30">
+                              <i class="dot"></i>
+                              <span>3만원</span>
+                            </label>
                           </div>
                           <div class="box_radio">
                             <input type="radio" name="price" id="priceAll" value="전체" />
-                            <label for="priceAll">전체</label>
+                            <label for="priceAll">
+                              <i class="dot"></i>
+                              <span>전체</span>
+                            </label>
                           </div>
                         </dd>
                       </dl>
@@ -679,6 +717,8 @@
           </footerBox>
           <!-- // #footBox -->
         </div>
+        <script src="../js/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="../js/jQuery/jquery-ui.min.js"></script>
         <script src="../js/src/main.js"></script>
       </body>
     </html>

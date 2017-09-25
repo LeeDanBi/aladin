@@ -60,7 +60,11 @@
             <nav id="gnb">
               <div class="box_wrap">
                 <ul>
-                  <li id="menuButton"><button type="button" id="buttonDeco"><span class="hidden">menu</span></button></li>
+                  <li id="menuButton">
+                    <button type="button" id="buttonDeco">
+                      <span class="hidden">menu</span>
+                    </button>
+                  </li>
                   <li><a href="sub_interior.html">국내도서</a></li>
                   <li><a href="sub_abroad.html">해외도서</a></li>
                   <li><a href="sub_ebook.html">ebook</a></li>
@@ -75,9 +79,137 @@
           </header>
           <!-- // #headBox -->
           <article id="contentBox">
-            <article class="aladin_info"></article>
+            <h2 class="hidden">알라딘 중고매장</h2>
+            <article class="aladin_info">
+              <div class="box_wrap">
+                <h3 class="hidden">알라딘 중고매장 정보</h3>
+                <div class="aladin_news clearfix">
+                  <h4>알라딘 새소식</h4>
+                  
+                    <ul>
+                      <li><a href="#">중고서점 가로수길점 신규 오픈!</a></li>
+                      <li><a href="#">참고서/대학교재 10% 할인 쿠폰!</a></li>
+                      <li><a href="#">중고서점 동탄점 신규 오픈!</a></li>
+                      <li><a href="#">로맨스소설/라이트노벨</a></li>
+                      <li><a href="#">10% 할인 쿠폰 + 무료배송!</a></li>
+                      <li><a href="#">중고 외국도서 10% 할인 쿠폰</a></li>
+                      <li><a href="#">해외 직수입 중고 음반 선착순 판매</a></li>
+                      <li><a href="#">중고 베스트도서 모음전</a></li>
+                      <li><a href="#">어린이 인기 학습만화 중고 기획전</a></li>
+                      <li><a href="#">모바일 판매자매니저 오픈!</a></li>
+                      <li><a href="#">온라인 중고샵 1천원 적립금 증정</a></li>
+                      <li><a href="#">최종 땡처리! 균일가 100원부터~</a></li>
+                      <li><a href="#">직배송 중고 첫 구매 3천원 할인쿠폰</a></li>
+                      <li><a href="#">중고 우수 판매자 기획전</a></li>
+                      <li><a href="#">한정수량 초특가 + 10% 할인쿠폰</a></li>
+                      <li><a href="#">알라딘 직배송 중고 2천원 할인 쿠폰</a></li>
+                      <li><a href="#">직수입 중고 외서 최대 80% 할인</a></li>
+                    </ul>
+                    <div class="btn_more"><i class="fa fa-plus" aria-hidden="true"></i><span class="hidden">새소식 더보기</span></div>
+                  
+                </div>
+                <div class="used_info">
+                  <h4 class="hidden">중고매장 정보</h4>
+                  <ul class="find_a">
+                    <li><a href="#">대학교 중고 장터</a></li>
+                    <li><a href="#">알라딘에 팔기 간단 안내</a></li>
+                    <li><a href="#">온라인 중고샵 FAQ</a></li>
+                    <li><a href="#">중고매장 FAQ</a></li>
+                    <li><a href="#">중고매장 바로가기</a></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
             <!-- // .aladin_info ____________ -->
-            <article class="search_used"></article>
+            <article class="box_search_used">
+              <h3 class="hidden">중고 도서 정보</h3>
+              <div class="box_wrap">
+                <div class="search_wrap">
+                  <h4 class="hidden">중고도서 검색</h4>
+                  <div class="search_used">
+                    <h5>중고 매입가를 조회해 보세요.</h5>
+                    <div>
+                      <div class="p_wrap clearfix">
+                        <p><a href="#">ISBN이란?</a></p>
+                        <p><a href="#">바코드 촬영으로 매입가 조회</a></p>
+                      </div>
+                      <form action="#" method="get">
+                        <fieldset>
+                          <legend>중고 매입가 조회</legend>
+                          <dl>
+                            <dt>상품타입</dt>
+                            <dd>
+                              <input type="radio" name="productType" id="interiorBook" value="국내도서"/>
+                              <label for="interiorBook">국내도서</label>
+                              <input type="radio" name="productType" id="abroadBook" value="외국도서"/>
+                              <label for="abroadBook">외국도서</label>
+                              <input type="radio" name="productType" id="music" value="음반"/>
+                              <label for="music">음반</label>
+                              <input type="radio" name="productType" id="dvd" value="DVD"/>
+                              <label for="dvd">DVD</label>
+                            </dd>
+                            <dt><label for="productName">상품명 또는 ISBN<span class="hidden">을 입력해서 검색하세요.</span> </label></dt>
+                            <dd class="search_product">
+                              <input type="search" name="productName" id="productName" vlaue="">
+                              <button type="button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <span class="hidden">검색버튼</span>
+                              </button>
+                            </dd>
+                          </dl>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="purchase_info">
+                    <h5>오늘 매입 가능 종수 : <span>908,189</span>종</h5>
+                    <dl>
+                      <dt>정상매입</dt>
+                      <dd><span>435,425</span>종</dd>
+                    </dl>
+                    <dl>
+                      <dt>균일가매입</dt>
+                      <dd><span>472,764</span>종</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="box_coupon">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="img_coupon"></div>
+                        <div>
+                          <p>알라딘 직배송 중고</p>
+                          <p><span class="point_color">2천원 할인 쿠폰</span></p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="img_coupon"></div>
+                        <div>
+                          <p><span class="point_color">
+                            규일가 5백원부터!
+                          </span></p>
+                          <p>땡처리 1만부 추가</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="img_coupon"></div>
+                        <div>
+                          <p>대상도서 구매시</p>
+                          <p><span class="point_color">
+                            1천원 적립금 증정
+                          </span></p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
             <!-- // .search_used ____________ -->
             <section id="addBanner">
               <div class="wrap_banner">

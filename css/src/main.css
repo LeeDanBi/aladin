@@ -4,8 +4,31 @@
   to {
     left: 20px; } }
 
+@keyframes icon1 {
+  from {
+    top: 18px;
+    left: 176px;
+    transform: rotate(-18deg); }
+  to {
+    top: 20px;
+    left: 186px;
+    transform: rotate(-35deg); } }
+
+@keyframes icon2 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes icon3 {
+  from {
+    transform: translateX(-80px); }
+  to {
+    transform: translateX(80px); } }
+
 #wrap {
   width: 100%;
+  min-width: 960px;
   height: auto;
   overflow-x: hidden; }
 
@@ -94,13 +117,22 @@
   width: 100%;
   height: 60px;
   background-color: #4C5C6C;
-  position: relative; }
+  position: relative;
+  z-index: 6500; }
+  #gnb.fixed {
+    position: fixed;
+    top: 0;
+    transform: translateY(-60px);
+    box-shadow: 0 0.1rem 0.1rem rgba(51, 51, 51, 0.7); }
+  #gnb.move {
+    transform: translateY(0); }
   #gnb .box_wrap {
     padding: 0 10px;
     box-sizing: border-box; }
   #gnb ul {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    position: relative; }
     #gnb ul li {
       width: auto;
       height: 100%;
@@ -114,13 +146,14 @@
         width: 152px;
         height: 62px;
         position: absolute;
-        bottom: -60px;
+        top: 60px;
         left: 50%;
         margin-left: -71px;
         z-index: 2000;
         background-image: url("../../img/gnb_menu.png");
         background-repeat: no-repeat;
-        cursor: pointer; }
+        cursor: pointer;
+        display: none; }
         #gnb ul li:first-child button {
           width: 36px;
           height: 23px;
@@ -358,7 +391,8 @@
         background-position: right bottom; }
 
 .effect_maple {
-  position: absolute; }
+  position: absolute;
+  transition: all 100ms; }
 
 .maple_1_l {
   width: 518px;
@@ -457,13 +491,73 @@
         display: block;
         margin-top: 18px;
         margin-bottom: 22px; }
+      .deatail_search form fieldset dl:first-of-type dd::before {
+        display: none; }
+      .deatail_search form fieldset dl:first-of-type dd input:checked + label::after {
+        display: none; }
+      .deatail_search form fieldset dl:first-of-type dd label::before {
+        display: none; }
+      .deatail_search form fieldset dl:first-of-type dd label::after {
+        display: none; }
       .deatail_search form fieldset dl dt {
         font-weight: bold; }
+      .deatail_search form fieldset dl dd.box_con {
+        width: 360px;
+        height: 42px;
+        margin-top: -55px;
+        margin-bottom: 16px; }
+        .deatail_search form fieldset dl dd.box_con label {
+          display: block;
+          width: 48px;
+          height: auto;
+          margin-left: 30px; }
+          .deatail_search form fieldset dl dd.box_con label:nth-child(4n+1) {
+            margin-left: 20px; }
+      .deatail_search form fieldset dl dd.box_publish label {
+        margin-right: 14px; }
+      .deatail_search form fieldset dl dd.box_stock .box_radio label {
+        width: 100px;
+        height: auto;
+        display: block;
+        margin-left: -32px;
+        text-align: center;
+        margin-right: 75px; }
+      .deatail_search form fieldset dl dd.box_price label {
+        margin-right: 58px; }
       .deatail_search form fieldset dl dd {
         width: 500px;
-        height: 40px; }
+        height: 40px;
+        position: relative;
+        margin-left: 80px;
+        margin-top: 2px; }
+        .deatail_search form fieldset dl dd::before {
+          content: " ";
+          display: block;
+          width: 300px;
+          height: 10px;
+          position: absolute;
+          position: absolute;
+          top: -15px;
+          left: 10px;
+          background-color: #fff;
+          border: 1px solid #333333; }
         .deatail_search form fieldset dl dd .box_check {
           float: left; }
+          .deatail_search form fieldset dl dd .box_check > input:checked + label::before {
+            background-image: url("../../img/main/checked.png");
+            background-repeat: no-repeat;
+            background-position: 0 0; }
+          .deatail_search form fieldset dl dd .box_check > label::before {
+            content: " ";
+            display: block;
+            width: 26px;
+            height: 20px;
+            position: absolute;
+            top: -2px;
+            left: -24px;
+            background-image: url("../../img/main/checked_none.png");
+            background-repeat: no-repeat;
+            background-position: 4px 0; }
         .deatail_search form fieldset dl dd .box_radio {
           float: left; }
         .deatail_search form fieldset dl dd input {
@@ -472,8 +566,46 @@
           opacity: 0;
           position: absolute;
           z-index: -5000; }
+          .deatail_search form fieldset dl dd input:checked + label > i {
+            width: 26px;
+            height: 26px;
+            top: -23px;
+            left: 50%;
+            margin-left: -13px;
+            border-radius: 13px;
+            padding: 2px;
+            box-sizing: border-box; }
+          .deatail_search form fieldset dl dd input:checked + label > i::before {
+            background-color: #CC1F41;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px; }
+          .deatail_search form fieldset dl dd input:focus + label > i::before {
+            background-color: #CC1F41; }
         .deatail_search form fieldset dl dd label {
-          margin-right: 10px; }
+          margin-right: 10px;
+          position: relative; }
+          .deatail_search form fieldset dl dd label > i {
+            content: " ";
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            margin-left: -10px;
+            background-color: #fff;
+            border: 1px solid #333333;
+            border-radius: 10px;
+            transition: all 500ms; }
+            .deatail_search form fieldset dl dd label > i:before {
+              content: " ";
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: #fff;
+              border-radius: 10px; }
     .deatail_search form .box_search {
       width: 402px;
       height: 40px; }
@@ -964,7 +1096,7 @@
       background-repeat: no-repeat;
       background-size: 150%;
       background-position: center;
-      transition: all 500ms cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+      transition: all 300ms ease-out; }
       .box_map_store .box_contents .store_img:hover {
         background-size: 200%; }
     .box_map_store .box_contents .store_info > dl {
@@ -1042,6 +1174,37 @@
         background-image: url("../../img/main/icon/ebook_icon_3.png");
         background-repeat: no-repeat;
         background-position: center; }
+      .box_introduce ul li:nth-child(1) > .img_icon {
+        position: relative; }
+      .box_introduce ul li:nth-child(1) > .img_icon::before {
+        content: " ";
+        width: 22px;
+        height: 88px;
+        background-image: url("../../img/main/icon/ebook_icon_1_hover.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 18px;
+        left: 176px;
+        transform: rotate(-18deg); }
+      .box_introduce ul li:nth-child(2) > .img_icon {
+        position: relative; }
+      .box_introduce ul li:nth-child(2) > .img_icon::before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background-image: url("../../img/main/icon/ebook_icon_2_hover.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-position: center; }
+      .box_introduce ul li:hover:nth-child(1) > .img_icon::before {
+        animation: icon1 1000ms 1;
+        animation-direction: alternate; }
+      .box_introduce ul li:hover:nth-child(2) > .img_icon::before {
+        animation: icon2 800ms 2; }
+      .box_introduce ul li:hover:nth-child(3) > .img_icon {
+        animation: icon3 500ms 2; }
       .box_introduce ul li .img_icon {
         width: 100%;
         height: 120px; }

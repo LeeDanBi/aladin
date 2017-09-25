@@ -4,27 +4,75 @@
 
   var windowS = $(window);
   var addBanner= $('#addBanner');
+  var gnb = $('#gnb');
   var menuButton = $('#menuButton');
+  var buttonDeco = $('#buttonDeco')
+
+  // menuButton.slideUp();
 
   windowS.on('scroll',function(){
   var wst = $(this).scrollTop();
   var mot = addBanner.offset().top;
-  if(wst>=mot){
-    menuButton.css({position:'fixed', top: '0'});
-  }else{
-    menuButton.css({position:'absolute', top: '60px'});
+
+
+  // if(wst>=mot){
+  //   menuButton.slideDown().css({position:'fixed', top: '0'}).removeClass('button_deco');
+  //   if(gnb.css('position')=='fixed' && gnb.css('top')=='0'){
+  //   menuButton.css({position:'absolute', top: '60px'});
+  //   }
+  // }else{
+  //   
+  //   menuButton.slideUp();
+  //   menuButton.css({position:'absolute', top: '60px'});
+  //   if(gnb.css('position')=='fixed'){
+  //     gnb.css({position:'relative', top: 0});
+  //   }
+  // }
+
+ if(wst>=mot){
+  gnb.addClass('fixed');
+  menuButton.slideDown();
+  if(!buttonDeco.hasClass('button_deco')){
+  gnb.css({transform:'translateY(-60px)'});
   }
+ }else{
+  menuButton.slideUp();
+  gnb.removeClass('fixed');
+  buttonDeco.removeClass('button_deco');
+  gnb.css({transform:'translateY(0)'});
+ }
+
+
   });
 
-    //버튼 눌렀을 떄--
-  var buttonDeco = $('#buttonDeco');
-    menuButton.on('click',function(e){
-      e.preventDefault();
-      buttonDeco.stop().toggleClass('button_deco');
-    });
+  menuButton.on('click',function(e) {
+    e.preventDefault();
+     buttonDeco.stop().toggleClass('button_deco');
+     if(buttonDeco.hasClass('button_deco')){
+       gnb.css({transform:'translateY(0)',transition:'all 500ms'});
+      }else{
+       gnb.css({transform:'translateY(-60px)',transition:'all 500ms'});
+      }
+  });
+
+  //   //버튼 눌렀을 떄--
+  // var buttonDeco = $('#buttonDeco')
+  //   menuButton.on('click',function(e){
+  //     e.preventDefault();
+  //     buttonDeco.stop().toggleClass('button_deco');
+  //     if(buttonDeco.hasClass('button_deco')){
+  //       gnb.css({position:'fixed', top: '-60px', zIndex:'6000'}).animate({top:'0'});
+  //       menuButton.animate({position:'fixed', top: '60px'});
+  //     }else{
+  //       gnb.animate({position:'fixed', top: '-60px'});
+  //       menuButton.animate({position:'fixed', top: '0'});
+  //     }
+  //       //버그가 많이 일어나고 있습니다. 도와주세요.
+  //   });
 
 
   // 배너의 maple effect _________________
+  var addBanner = $('#addBanner');
   var maple_1_l = $('.maple_1_l');
   var maple_2_l = $('.maple_2_l');
   var maple_3_l = $('.maple_3_l');
@@ -53,7 +101,7 @@
 
   // addBanner 슬라이드 ____________________
   var bannerUl = $('.wrap_banner').children('ul');
-  var banner_li = bannerUl.children();
+  var banner_li = bannerUl.children()
   var clone_li = banner_li.last().clone();
 
   var indicatorBox = $('.btn_indicate');
@@ -86,7 +134,7 @@ function MoveUl(e){
   bannerUl.stop().animate({marginLeft: -(100*i)+'%'});
   indicator_li.eq(i).css({backgroundColor:'#F18C00'}).siblings().css({backgroundColor:'#E4DBCF'});
   // console.log(i);
-}
+};
 
 btn_indi.on('click',MoveUl); // indicate 클릭
 
@@ -112,7 +160,7 @@ function MoveUl_l(){
      bannerUl.stop().animate({marginLeft: -(100*i)+'%'});
      indicator_li.eq(i).css({backgroundColor:'#F18C00'}).siblings().css({backgroundColor:'#E4DBCF'});
   }
-}
+};
 btnRight.on('click',MoveUl_r);
 
 
@@ -129,7 +177,7 @@ function MoveUl_r(){
     bannerUl.stop().animate({marginLeft: -(100*i)+'%'});
   }
   //console.log(i);
-}
+};
 
  window.setInterval(MoveUl_r,5500);
 
