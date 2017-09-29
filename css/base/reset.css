@@ -1,4 +1,6 @@
 /* reset.css */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 :root{font-size:16px; color:inherit;}
 
 html,body{width: 100%; height: 100%;  color:#333;}
@@ -7,7 +9,7 @@ p, div, img, table, figure,
 header, article, section, footer, nav,aside,main, 
 ul,ol,dl,li,dt,dd,fieldset{
   margin:0; padding:0; border:0; outline: 0;
-  font: 100%/1.2/*rem이 된다.*/ "myriad pro", arial, nanumGothic, dotum, sans-serif; }
+  font: 100%/1.2/*rem이 된다.*/ nanumGothic, "myriad pro", arial,  dotum, sans-serif; }
 
 h1,h2,h3,h4,h5,h6{font-weight:bold;/*font: 에서 normal로 자동 설정되었기 때문에 다시*/}
 
