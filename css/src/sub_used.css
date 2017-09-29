@@ -361,9 +361,12 @@
       line-height: 56px;
       font-size: 1.25rem;
       position: absolute;
-      background-color: #fff; }
+      background-color: #fff;
+      opacity: 0;
+      transition: all 1000ms; }
       .aladin_news ul li.focus, .aladin_news ul li.active {
-        z-index: 10; }
+        z-index: 10;
+        opacity: 1; }
   .aladin_news .btn_more {
     width: 50px;
     height: 50px;
@@ -373,12 +376,21 @@
     position: absolute;
     top: 3px;
     right: 3px;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    font-size: 1.5rem; }
+    z-index: 300;
+    overflow: hidden;
+    transition: all 500ms; }
+    .aladin_news .btn_more button {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      font-size: 1.5rem; }
+      .aladin_news .btn_more button:focus {
+        outline: 0;
+        color: #F18C00; }
 
-.newClone {
+.box_clone {
   width: 100%;
   height: 450px;
   position: absolute;
@@ -386,7 +398,43 @@
   left: 0;
   background-color: #fff;
   z-index: 100;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(85, 85, 85, 0.7); }
+  .box_clone h4 {
+    width: 320px;
+    height: 100%;
+    float: left;
+    background-color: #4C5C6C;
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: bold;
+    padding-top: 180px;
+    box-sizing: border-box;
+    position: relative; }
+    .box_clone h4::before {
+      content: " ";
+      display: block;
+      width: 180px;
+      height: 1px;
+      position: absolute;
+      top: 220px;
+      left: 50%;
+      margin-left: -90px;
+      background-color: #fff; }
+  .box_clone .news_wrap {
+    width: 640px;
+    height: 100%;
+    float: left; }
+    .box_clone .news_wrap ul {
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      padding: 120px 0 0 50px; }
+      .box_clone .news_wrap ul li {
+        width: 260px;
+        height: auto;
+        margin-bottom: 6px;
+        float: left; }
 
 .used_info {
   width: 330px;
@@ -467,14 +515,42 @@
         height: auto; }
       .search_wrap .search_used form dt {
         font-weight: bold;
-        font-size: 1.25rem; }
+        font-size: 1.25rem;
+        margin-top: 20px; }
       .search_wrap .search_used form dd {
         width: auto;
         height: auto; }
+        .search_wrap .search_used form dd:first-of-type {
+          margin-top: -20px;
+          margin-left: 100px; }
         .search_wrap .search_used form dd input[type="radio"] {
           opacity: 0;
           position: absolute;
           z-index: -500; }
+          .search_wrap .search_used form dd input[type="radio"] + label {
+            position: relative;
+            margin-right: 20px; }
+            .search_wrap .search_used form dd input[type="radio"] + label .dot {
+              width: 16px;
+              height: 16px;
+              border-radius: 8px;
+              border: 2px solid #aaa;
+              display: block;
+              position: absolute;
+              box-sizing: border-box;
+              top: 1px;
+              left: -18px; }
+          .search_wrap .search_used form dd input[type="radio"]:checked + label > .dot {
+            border-color: #CC1F41;
+            padding: 2px;
+            box-sizing: border-box; }
+            .search_wrap .search_used form dd input[type="radio"]:checked + label > .dot:before {
+              content: " ";
+              width: 100%;
+              height: 100%;
+              display: block;
+              border-radius: 10px;
+              background-color: #CC1F41; }
         .search_wrap .search_used form dd input[type="search"] {
           width: 416px;
           height: 40px;

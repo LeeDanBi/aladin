@@ -1,5 +1,5 @@
 (function($){
-  // notice__________________________
+   // notice__________________________
 
  var noticeUl = $('.menu_notice');
  var notice_dt = $('.menu_notice').children().children().children('dt');
@@ -25,10 +25,12 @@
     btnL.hide();
 
     btnL.on('click',function(){
+      btnL.hide();
     var ulml = parseInt(noticeUl.css('marginLeft'));
-      noticeUl.stop(true,false).animate({marginLeft: ulml + 174 + 'px'},function() {
-        ulml = parseInt(noticeUl.css('marginLeft'));
-        if(ulml >= 0){
+    noticeUl.animate({marginLeft: ulml + 174+ 'px'},function(){
+      ulml = parseInt(noticeUl.css('marginLeft') );
+
+      if(ulml >= 0){
         btnL.hide();
         btnR.show();
       }else{
@@ -36,12 +38,13 @@
         btnR.show(); 
        }//if문,else
       });
-  
     });//btnL.on
     btnR.on('click',function(){
+      btnR.hide();
     var ulml = parseInt(noticeUl.css('marginLeft'));
     noticeUl.animate({marginLeft: ulml -174+ 'px'},function(){
-      ulml = parseInt(noticeUl.css('marginLeft'));
+      ulml = parseInt(noticeUl.css('marginLeft') );
+
       if(ulml < -522){
       btnL.show();
       btnR.hide();

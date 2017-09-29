@@ -84,7 +84,7 @@
                 <div class="aladin_news clearfix">
                   <h4>알라딘 새소식</h4>
                     <ul>
-                      <li><a href="#">중고서점 가로수길점 신규 오픈!</a></li>
+                      <li class="focus"><a href="#">중고서점 가로수길점 신규 오픈!</a></li>
                       <li><a href="#">참고서/대학교재 10% 할인 쿠폰!</a></li>
                       <li><a href="#">중고서점 동탄점 신규 오픈!</a></li>
                       <li><a href="#">로맨스소설/라이트노벨</a></li>
@@ -102,7 +102,12 @@
                       <li><a href="#">알라딘 직배송 중고 2천원 할인 쿠폰</a></li>
                       <li><a href="#">직수입 중고 외서 최대 80% 할인</a></li>
                     </ul>
-                    <div class="btn_more"><i class="fa fa-plus" aria-hidden="true"></i><span class="hidden">새소식 더보기</span></div>
+                    <div class="btn_more">
+                      <button type="button">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <span class="hidden">새소식 더보기</span>
+                      </button>
+                    </div>
                 </div>
                 <div class="used_info">
                   <h4 class="hidden">중고매장 정보</h4>
@@ -136,13 +141,25 @@
                             <dt>상품타입</dt>
                             <dd>
                               <input type="radio" name="productType" id="interiorBook" value="국내도서"/>
-                              <label for="interiorBook">국내도서</label>
+                              <label for="interiorBook">
+                                <i class="dot"></i>
+                                <span>국내도서</span>
+                              </label>
                               <input type="radio" name="productType" id="abroadBook" value="외국도서"/>
-                              <label for="abroadBook">외국도서</label>
+                              <label for="abroadBook">
+                                <i class="dot"></i>
+                                <span>외국도서</span>
+                              </label>
                               <input type="radio" name="productType" id="music" value="음반"/>
-                              <label for="music">음반</label>
+                              <label for="music">
+                                <i class="dot"></i>
+                                <span>음반</span>
+                              </label>
                               <input type="radio" name="productType" id="dvd" value="DVD"/>
-                              <label for="dvd">DVD</label>
+                              <label for="dvd">
+                                <i class="dot"></i>
+                                <span>DVD</span>
+                              </label>
                             </dd>
                             <dt><label for="productName">상품명 또는 ISBN<span class="hidden">을 입력해서 검색하세요.</span> </label></dt>
                             <dd class="search_product">

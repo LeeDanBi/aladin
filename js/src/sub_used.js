@@ -183,17 +183,41 @@ boxBtn.on('mouseleave',SetIn);
   });
 
   function News_roll(){
+    console.log(i);
     i++
+    if(i>=aladin_li.length){
+      i=0;
+    }
     aladin_li.eq(i).addClass('focus');
     aladin_li.eq(i).siblings().removeClass('focus');
   }
   // * 새소식 모달창 만들기
-  aladin_bth.on('click',function(){ 
-    var news_clone = aladinNews.children('ul').clone();
-    var _new_div = aladinArt.append('<div class="box_clone">');
-    $('.box_clone').append(news_clone[0]);
-    $('.box_clone').addClass('newClone');
-    $('.box_clone').parent().css({position:'relative'});
+  aladin_bth.on('click',function(e){
+    e.preventDefault();
+    if((aladinArt.find('.box_clone')[0])==undefined){
+      //console.log('oo');
+      //창 나타나기 
+      var news_clone = aladinNews.children('ul').clone();
+      aladinArt.append('<div class="box_clone">');
+      var _boxClone = $('.box_clone');
+      _boxClone.prepend('<h4>알라딘 새소식</h4>');
+      _boxClone.append('<div class="news_wrap">');
+      var _newsWrap = $('.news_wrap');
+      _newsWrap.append(news_clone[0]);
+      _boxClone.parent().css({position:'relative'});
+
+      //버튼 모양 바뀌기
+      aladin_bth.css({transform: 'rotate(135deg)'});
+    }else{
+      //console.log('xx');
+      //창 삭제
+      $('.box_clone').remove();
+      //버튼 모양 돌아가기
+      aladin_bth.css({transform: 'rotate(0deg)'});
+    }
+
+    
+
   });
 
 })(); //즉시실행 함수 (알라딘 뉴스)
@@ -211,10 +235,10 @@ boxBtn.on('mouseleave',SetIn);
   reco_btn_l.on('click',function(){
     var reulmg = parseInt(reco_ul.css('marginLeft'));
     //reco_ul.css({marginLeft: reulmg + 950 + 'px'});
-    console.log('if문 밖');
+    // console.log('if문 밖');
     if(reulmg == 0){
       reco_ul.css({marginLeft:'-950px'});
-      console.log('if문 안');
+      // console.log('if문 안');
     }else{
       reco_ul.css({marginLeft: reulmg + 950 + 'px'});
     }
@@ -222,10 +246,10 @@ boxBtn.on('mouseleave',SetIn);
   reco_btn_r.on('click',function(){
     var reulmg = parseInt(reco_ul.css('marginLeft'));
     //reco_ul.css({marginLeft: reulmg - 950 + 'px'});
-    console.log('if문 밖');
+    // console.log('if문 밖');
     if(reulmg == -950){
       reco_ul.css({marginLeft: 0});
-      console.log('if문 안');
+      // console.log('if문 안');
     }else{
       reco_ul.css({marginLeft: reulmg + -950 + 'px'});
     }
@@ -241,10 +265,10 @@ boxBtn.on('mouseleave',SetIn);
   reco_btn_l.on('click',function(){
     var reulmg = parseInt(reco_ul.css('marginLeft'));
     //reco_ul.css({marginLeft: reulmg + 950 + 'px'});
-    console.log('if문 밖');
+    // console.log('if문 밖');
     if(reulmg == 0){
       reco_ul.css({marginLeft:'-950px'});
-      console.log('if문 안');
+      // console.log('if문 안');
     }else{
       reco_ul.css({marginLeft: reulmg + 950 + 'px'});
     }
@@ -252,10 +276,10 @@ boxBtn.on('mouseleave',SetIn);
   reco_btn_r.on('click',function(){
     var reulmg = parseInt(reco_ul.css('marginLeft'));
     //reco_ul.css({marginLeft: reulmg - 950 + 'px'});
-    console.log('if문 밖');
+    // console.log('if문 밖');
     if(reulmg == -950){
       reco_ul.css({marginLeft: 0});
-      console.log('if문 안');
+      // console.log('if문 안');
     }else{
       reco_ul.css({marginLeft: reulmg + -950 + 'px'});
     }
