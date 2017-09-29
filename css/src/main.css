@@ -72,7 +72,7 @@
   height: 118px;
   padding-top: 22px;
   box-sizing: border-box; }
-  .box_main_head h1 {
+  .box_main_head #logo {
     width: 181px;
     height: 82px;
     background-image: url("../../img/header/logo.png");
@@ -307,6 +307,12 @@
           width: 100%;
           height: 100%;
           display: block; }
+
+@media screen and (max-width: 1150px) {
+  #inb > .box_wrap {
+    width: 960px; }
+  #inb > .box_wrap li {
+    font-size: 0.8125rem; } }
 
 #addBanner {
   width: 100%;
@@ -547,6 +553,8 @@
             background-image: url("../../img/main/checked.png");
             background-repeat: no-repeat;
             background-position: 0 0; }
+          .deatail_search form fieldset dl dd .box_check > input:focus + label {
+            outline: 1px solid #CC1F41; }
           .deatail_search form fieldset dl dd .box_check > label::before {
             content: " ";
             display: block;
@@ -637,14 +645,14 @@
   .ranking_10 .box_ranking {
     width: 100%;
     height: 100%; }
-    .ranking_10 .box_ranking h3 {
+    .ranking_10 .box_ranking h4 {
       font-size: 1.125rem;
       color: #fff;
       margin-bottom: 37px;
       position: relative; }
-      .ranking_10 .box_ranking h3 .pink {
+      .ranking_10 .box_ranking h4 .pink {
         color: #ECD8D9; }
-      .ranking_10 .box_ranking h3 .top10 {
+      .ranking_10 .box_ranking h4 .top10 {
         display: inline-block;
         width: 50px;
         height: 16px;
@@ -655,7 +663,7 @@
         text-align: center;
         line-height: 16px;
         margin-left: 10px; }
-      .ranking_10 .box_ranking h3::before {
+      .ranking_10 .box_ranking h4::before {
         content: " ";
         width: 262px;
         height: 4px;
@@ -1058,7 +1066,46 @@
       height: 100%;
       float: right;
       background-image: url("../../img/main/store/store_map.png");
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      position: relative; }
+    .box_map_store .box_map .map_point {
+      width: 60px;
+      height: 70px;
+      position: absolute;
+      background-image: url("../../img/main/store/pinset.png");
+      background-repeat: no-repeat;
+      transition: all 300ms; }
+      .box_map_store .box_map .map_point:hover {
+        -webkit-transform: scale(1.2); }
+      .box_map_store .box_map .map_point > button:focus {
+        outline: 0;
+        background-image: url("../../img/main/store/pinset_act.png");
+        background-repeat: no-repeat; }
+      .box_map_store .box_map .map_point button {
+        width: 100%;
+        height: 100%; }
+    .box_map_store .box_map .actPoint {
+      background-image: url("../../img/main/store/pinset_act.png");
+      background-repeat: no-repeat;
+      transform: scale(1.2); }
+    .box_map_store .box_map #seoul {
+      top: 14px;
+      left: 130px; }
+    .box_map_store .box_map #gyungi {
+      top: 66px;
+      left: 182px; }
+    .box_map_store .box_map #deajun {
+      top: 190px;
+      left: 166px; }
+    .box_map_store .box_map #deagu {
+      top: 132px;
+      left: 326px; }
+    .box_map_store .box_map #busan {
+      top: 288px;
+      left: 295px; }
+    .box_map_store .box_map #gwangju {
+      top: 338px;
+      left: 106px; }
   .box_map_store .box_contents {
     width: 50%;
     height: 100%;
@@ -1079,12 +1126,18 @@
     .box_map_store .box_contents .store_info {
       width: 480px;
       height: 100%;
-      float: left; }
+      float: left;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #4C5C6C; }
       .box_map_store .box_contents .store_info:hover a:before {
         animation-name: example;
         animation-duration: 500ms;
         animation-iteration-count: infinite;
         animation-direction: alternate; }
+    .box_map_store .box_contents .active {
+      z-index: 100; }
     .box_map_store .box_contents .store_img {
       width: 390px;
       height: 266px;
@@ -1092,8 +1145,6 @@
       margin-bottom: 24px;
       border-radius: 30px;
       border: 1px solid #333333;
-      background-image: url("../../img/main/store/store_garosu.png");
-      background-repeat: no-repeat;
       background-size: 150%;
       background-position: center;
       transition: all 300ms ease-out; }
@@ -1222,3 +1273,7 @@
           width: 100%;
           height: auto;
           font-size: 1rem; }
+
+@media screen and (max-width: 1500px) {
+  .effect_maple {
+    display: none; } }

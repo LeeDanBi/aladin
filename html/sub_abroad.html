@@ -12,14 +12,14 @@
           <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
           <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
           <link rel="stylesheet" type="text/css" href="../css/src/sub_abroad.css" />
-          <script src="../js/jquery/jquery-3.2.1.min.js"></script>
-          <script src="../js/jquery/jquery-ui.min.js"></script>
           <title>알라딘</title>
       </head>
       <body>
         <div id="wrap">
           <header id="headBox">
+            <h1 class="hidden">알라딘</h1>
             <nav id="unb">
+              <h2 class="hidden">유저 네비게이션 바</h2>
               <div class="box_wrap"> 
               <!-- .box_wrap은 가로 사이즈용 태그입니다. -->
                 <ul>
@@ -31,8 +31,9 @@
               </div>
             </nav>
             <article class="box_main_head">
+              <h2 class="hidden">알라딘 메인 헤더</h2>
               <div class="box_wrap">
-                <h1 index="0"><a href="main.html"><span class="hidden">알라딘</span></a></h1>
+                <div id="logo" class="find_a"><a href="main.html"><span class="hidden">알라딘</span></a></div>
                 <form action="#" method="get">
                   <fieldset>
                     <legend></legend>
@@ -58,6 +59,7 @@
               </div>
             </article>
             <nav id="gnb">
+              <h2 class="hidden">글로벌 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li id="menuButton"><button type="button" id="buttonDeco"><span class="hidden">menu</span></button></li>
@@ -75,35 +77,97 @@
           </header>
           <!-- // #headBox -->
           <section id="addBanner">
+            <h2 class="hidden">알라딘 해외도서 이벤트</h2>
             <div class="wrap_banner">
               <ul>
-                <li class="bn_1"><a href="#"></a></li>
-                <li class="bn_2"><a href="#"></a></li>
-                <li class="bn_3"><a href="#"></a></li>
-                <li class="bn_4"><a href="#"></a></li>
+                <li class="bn_1"><a href="#">
+                  <span class="hidden">
+                    외국도서 대학교재 shop
+                    데일리 파우치, 불렉 저널, 글라스 테스, 유리머그 증정 이벤트 
+                  </span>
+                </a></li>
+                <li class="bn_2"><a href="#">
+                  <span class="hidden">
+                    어린이외서 ELT교재
+                    적립금 + 직수입 Mini Book 증정 이벤트
+                  </span>
+                </a></li>
+                <li class="bn_3"><a href="#">
+                  <span class="hidden">
+                    2018 캘린더, 다이어리
+                    최대 25%할인 + 슈퍼이어로 캘린더 증정 이벤트
+                  </span>
+                </a></li>
+                <li class="bn_4"><a href="#">
+                  <span class="hidden">
+                    9월 특별 선물
+                    북슬리브 book sleeve증정 이벤트
+                  </span>
+                </a></li>
               </ul>
             </div>
             <div class="box_btn">
               <div class="btn_left"></div>
               <ul class="btn_indicate">
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    외국도서 대학교재 shop
+                  </span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    어린이외서 ELT교재
+                  </span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    2018 캘린더, 다이어리
+                  </span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    9월 특별 선물
+                  </span>
+                </button></li>
               </ul>
               <div class="btn_right"></div>
             </div>
           </section>
           <!-- // #addBanner -->
           <article id="contentBox">
+            <h2 class="hidden">알라딘 해외도서 페이지</h2>
             <article class="box_sale book_show">
               <div class="box_wrap">
                 <h3>특가도서</h3>
                 <div class="list_wrap">
                   <ul class="list_book">
-                    <li class="book_1"><a href="#"></a></li>
-                    <li class="book_2"><a href="#"></a></li>
-                    <li class="book_3"><a href="#"></a></li>
+                    <li class="book_1">
+                      <div class="book_img">
+                        <a href="#"></a>
+                      </div>
+                      <dl>
+                        <dt>The Complete Alice</dt>
+                        <dd>43,680원<span class="sale_percent">(18%)</span></dd>
+                      </dl>
+                    </li>
+                    <li class="book_2">
+                      <div class="book_img">
+                        <a href="#"></a>
+                      </div>
+                      <dl>
+                        <dt>13층 나무집 6종 세트</dt>
+                        <dd>28,900원<span class="sale_percent">(59%)</span></dd>
+                      </dl>
+                    </li>
+                    <li class="book_3">
+                      <div class="book_img">
+                        <a href="#"></a>
+                      </div>
+                      <dl>
+                        <dt>The Girl Who Drank the Moon</dt>
+                        <dd>13,500원<span class="sale_percent">(34%)</span></dd>
+                      </dl>
+                    </li>
                   </ul>
                 </div>
                 <div id="btnMore" class="btn_book inner_a">
@@ -112,16 +176,87 @@
               </div>
             </article>
             <!-- ______특가도서_______________ -->
-            <article class="ad_book"></article>
+            <article class="ad_book">
+              <h3 class="hidden">책 광고</h3>
+              <div class="box_ad">
+                <div class="book_78">
+                  <div>
+                    <p>78층 나무집 출간</p>
+                    <p class="btn_more"><a href="#">더보기</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="box_ad">
+                <div class="book_busy">
+                  <div>
+                    <p>
+                      <span class="font_z">미니 피규어 포함~</span> <br />
+                      <span class="pink">My Busy Book!</span>
+                    </p>
+                    <p class="btn_more"><a href="#">더보기</a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
             <!-- 책 광고_____________ -->
             <article class="box_new book_show">
               <div class="box_wrap">
                 <h3>새로 나온 도서</h3>
                 <div class="list_wrap">
                   <ul class="list_book">
-                    <li class="book_1"><a href="#"></a></li>
-                    <li class="book_2"><a href="#"></a></li>
-                    <li class="book_3"><a href="#"></a></li>
+                    <li>
+                      <div class="book_img">
+                        <a href="#"></a>
+                      </div>
+                      <dl>
+                        <dt>스파이더맨: 홈커밍 아트북</dt>
+                        <dd>
+                          Spider-Man:<br />
+                          Homecoming:<br />
+                          The Art of the Movie<br />
+                          (Hardcover)
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <div class="book_img">
+                        <a href="#"></a>
+                      </div>
+                      <dl>
+                        <dt>'북유럽 신화' 원작</dt>
+                        <dd>
+                          Norse Mythology<br />
+                          (Paperback)
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <div class="book_img">
+                        <a href="#"></a>
+                      </div>
+                      <dl>
+                        <dt>크리스토퍼 놀런 '덩케르크' 원작</dt>
+                        <dd>
+                          Dunkirk : The History Behind<br /> 
+                          the Major Motion Picture<br />
+                          (Paperback)
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <div class="book_img">
+                        <a href="#"></a>
+                      </div>
+                      <dl>
+                        <dt>&lt;호모 데우스&gt; 원서</dt>
+                        <dd>
+                          Homo Deus :<br />
+                          A Brief History<br />
+                          of Tomorrow<br />
+                          (Paperback)
+                        </dd>
+                      </dl>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -150,8 +285,9 @@
             <!-- // .box_recommend -->
           </article>
           <!-- // #contentBox -->
-          <footerBox id="footBox">
+          <footer id="footBox">
             <nav id="inb">
+              <h2 class="hidden">알라딘 정보 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li><a href="#">회사소개</a></li>
@@ -167,7 +303,7 @@
                 </ul>
               </div>
             </nav>
-            <article class="box_foot">
+            <div class="box_foot">
               <div class="box_wrap">
                 <h2><span class="hidden">알라딘 로고</span></h2>
                 <div class="foot_content">
@@ -204,10 +340,14 @@
                   </div>
                 </div>
               </div>
-            </article>
-          </footerBox>
+            </div>
+          </footer>
           <!-- // #footBox -->
         </div>
-        <!-- <script src="../js/src/main.js"></script> -->
+        <!-- script -->
+        <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery/jquery-ui.min.js"></script>
+        <script src="../js/src/common.js"></script>
+        <script src="../js/src/sub_abroad.js"></script>
       </body>
     </html>

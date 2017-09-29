@@ -18,7 +18,9 @@
       <body>
         <div id="wrap">
           <header id="headBox">
+            <h1 class="hidden">알라딘</h1>
             <nav id="unb">
+              <h2 class="hidden">유저 네비게이션 바</h2>
               <div class="box_wrap"> 
               <!-- .box_wrap은 가로 사이즈용 태그입니다. -->
                 <ul>
@@ -30,8 +32,9 @@
               </div>
             </nav>
             <article class="box_main_head">
+              <h2 class="hidden">알라딘 메인 헤더</h2>
               <div class="box_wrap">
-                <h1 index="0"><a href="main.html"><span class="hidden">알라딘</span></a></h1>
+                <div id="logo" class="find_a"><a href="main.html"><span class="hidden">알라딘</span></a></div>
                 <form action="#" method="get">
                   <fieldset>
                     <legend></legend>
@@ -57,6 +60,7 @@
               </div>
             </article>
             <nav id="gnb">
+              <h2 class="hidden">글로벌 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li id="menuButton"><button type="button" id="buttonDeco"><span class="hidden">menu</span></button></li>
@@ -74,12 +78,44 @@
           </header>
           <!-- // #headBox -->
           <section id="addBanner">
+            <h2 class="hidden">알라딘 이벤트 배너</h2>
             <div class="wrap_banner">
               <ul>
-                <li class="bn_1"><a href="#"></a></li>
-                <li class="bn_2"><a href="#"></a></li>
-                <li class="bn_3"><a href="#"></a></li>
-                <li class="bn_4"><a href="#"></a></li>
+                <li class="bn_1">
+                  <a href="#">
+                    <span class="hidden">
+                      초중고 참고서, 모비딕 펜케이스/밤비 파우치 증정 이벤트
+                    </span>
+                  </a>
+                </li>
+                <li class="bn_2">
+                  <a href="#">
+                    <span class="hidden">
+                      9월 특별선물 이벤트,
+                      알라딘, 무민 텀블로 콜라보레이션
+                    </span>
+                  </a>
+                </li>
+                <li class="bn_3">
+                  <a href="#">
+                    <span class="hidden">
+                      환경, 생태 최고의 고전,
+                      레이첼 카슨,
+                      침묵의 봄, 리커버
+                      특별제장 휴대용 장바구니 증정 이벤트
+                    </span>
+                  </a>
+                </li>
+                <li class="bn_4">
+                  <a href="#">
+                    <span class="hidden">
+                      세상 모든 것의 기원
+                      윤태호가 오리진을 통해
+                      우리 시대에 말하고 싶은 것은?
+                      미생/오리진 마우스패드, 봉투 페이퍼토이(한정수량) 이벤트
+                    </span>
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- 낙엽 효과 넣은 것 시작 -->
@@ -93,19 +129,30 @@
             <div class="box_btn">
               <div class="btn_left"></div>
               <ul class="btn_indicate">
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
+                <li><button type="button">
+                  <span class="hidden">초중고 참고서 이벤트</span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">9월 특별 선물 이벤트</span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">침묵의 봄 리커버, 사은품 증정 이벤트</span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">미생/오리진 마우스 패드, 봉투 페이퍼토이 이벤트</span>
+                </button></li>
               </ul>
               <div class="btn_right"></div>
             </div>
           </section>
           <!-- // #addBanner -->
           <article id="contentBox">
+            <h2 class="hidden">알라딘 메인 페이지</h2>
             <article class="box_search_rank">
+              <h3 class="hidden">알라딘 검색, 랭킹</h3>
               <div class="box_wrap">
                 <article class="deatail_search">
+                  <h4 class="hidden">상세 검색</h4>
                   <form action="#" method="get">
                     <fieldset>
                       <legend class="hidden">상세 검색</legend>
@@ -259,10 +306,10 @@
                 </article>
                 <article class="ranking_10">
                   <div class="box_ranking">
-                    <h3>
+                    <h4>
                       종합 주간 <span class="pink">베스트 셀러</span>
                       <span class="top10">top 10</span>
-                    </h3>
+                    </h4>
                     <ul>
                       <li>
                         <span class="rank">1<span class="hidden">위</span></span>
@@ -313,7 +360,7 @@
                         <span class="rank">6<span class="hidden">위</span></span>
                         <span>
                           <a href="#">바깥은 열</a>
-                          <span class="grade" class="rank_up">10
+                          <span class="grade rank_up">10
                             <span class="hidden">up</span>
                           </span>
                         </span>
@@ -403,6 +450,7 @@
             </article>
             <!-- // .box_new -->
             <article class="box_notice">
+              <h3 class="hidden">공지사항</h3>
               <div class="box_btn">
                 <div class="btn btn_l"></div>
                 <div class="btn btn_r"></div>
@@ -598,13 +646,51 @@
             </article>
             <!-- // .box_info_ebook -->
             <article class="box_map_store">
+              <h3 class="hidden">알라딘 오프라인 매장</h3>
               <div class="box_map">
-                <div class="map">
-                  <!-- map이미지 들가는 자리입니다. -->
-                </div>
+                <ul class="map">
+                  <!-- map이미지가 들어가는 자리입니다. -->
+                  <li id="seoul" class="map_point actPoint" title="가로수길" data-img="garosu">
+                    <!-- 맵 포인트 입니다. -->
+                    <button type="button">
+                      <span class="hidden">가로수길점</span>
+                    </button>
+                  </li>
+                  <li id="gyungi" class="map_point" title="수원" data-img="suwon">
+                    <!-- 맵 포인트 입니다. -->
+                    <button type="button">
+                      <span class="hidden">수원점</span>
+                    </button>
+                  </li>
+                  <li id="deajun" class="map_point" title="대전시청역" data-img="deajeonCityhall">
+                    <!-- 맵 포인트 입니다. -->
+                    <button type="button">
+                      <span class="hidden">대전시청역점</span>
+                    </button>
+                  </li>
+                  <li id="deagu" class="map_point" title="대구동성로" data-img="deagu">
+                    <!-- 맵 포인트 입니다. -->
+                    <button type="button">
+                      <span class="hidden">대구동성로점</span>
+                    </button>
+                  </li>
+                  <li id="busan" class="map_point" title="부산서면" data-img="busan">
+                    <!-- 맵 포인트 입니다. -->
+                    <button type="button">
+                      <span class="hidden">부산서면점</span>
+                    </button>
+                  </li>
+                  <li id="gwangju" class="map_point" title="광주상무" data-img="gwangju">
+                    <!-- 맵 포인트 입니다. -->
+                    <button type="button">
+                      <span class="hidden">광주상무점</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
-              <div class="box_contents">
-                <div class="store_info">
+              <ul class="box_contents">
+                <!-- 가로수길 -->
+                <li class="store_info active">
                   <div class="store_img">
                     <!-- 매장 사진 -->
                   </div>
@@ -617,11 +703,88 @@
                       <p><a href="#">자세히 보기</a></p>
                     </dd>
                   </dl>
-                </div>
-              </div>
+                </li>
+                <!-- 수원 -->
+                <li class="store_info">
+                  <div class="store_img">
+                    <!-- 매장 사진 -->
+                  </div>
+                  <dl>
+                    <dt>수원점</dt>
+                    <dd>
+                      <p>영업 시간 : 09:30~22:00</p>
+                      <p>정기 휴일 : 설날(음력), 추석 당일</p>
+                      <p>주소 : 경기도 수원시 팔달구 덕영대로 925 지하 1층 (매산로1가)</p>
+                      <p><a href="#">자세히 보기</a></p>
+                    </dd>
+                  </dl>
+                </li>
+                <!-- 대전 -->
+                <li class="store_info">
+                  <div class="store_img">
+                    <!-- 매장 사진 -->
+                  </div>
+                  <dl>
+                    <dt>대전시청역점</dt>
+                    <dd>
+                      <p>영업 시간 : 09:30~22:00</p>
+                      <p>정기 휴일 : 설날(음력), 추석 당일</p>
+                      <p>주소 : 대전광역시 서구 둔산로 125 둔산동 스타 빌딩 3층</p>
+                      <p><a href="#">자세히 보기</a></p>
+                    </dd>
+                  </dl>
+                </li>
+                <!-- 대구 -->
+                <li class="store_info">
+                  <div class="store_img">
+                    <!-- 매장 사진 -->
+                  </div>
+                  <dl>
+                    <dt>대구동성로점</dt>
+                    <dd>
+                      <p>영업 시간 : 09:30~22:00</p>
+                      <p>정기 휴일 : 설날(음력), 추석 당일</p>
+                      <p>주소 : 대구광역시 중구 국채보상로 582, 미도빌딩 지하 1층 (남일동)</p>
+                      <p><a href="#">자세히 보기</a></p>
+                    </dd>
+                  </dl>
+                </li>
+                <!-- 부산 -->
+                <li class="store_info">
+                  <div class="store_img">
+                    <!-- 매장 사진 -->
+                  </div>
+                  <dl>
+                    <dt>부산서면점</dt>
+                    <dd>
+                      <p>영업 시간 : 09:30~22:00</p>
+                      <p>정기 휴일 : 설날(음력), 추석 당일</p>
+                      <p>주소 : 부산진구 중앙대로 704 동보프라자 2,3층</p>
+                      <p><a href="#">자세히 보기</a></p>
+                    </dd>
+                  </dl>
+                </li>
+                <!-- 광주 -->
+                <li class="store_info">
+                  <div class="store_img">
+                    <!-- 매장 사진 -->
+                  </div>
+                  <dl>
+                    <dt>광주상무점</dt>
+                    <dd>
+                      <p>영업 시간 : 09:30~22:00</p>
+                      <p>정기 휴일 : 설날(음력), 추석 당일</p>
+                      <p>주소 : 광주광역시 서구 상무평화로 79 팔복빌딩 지하 1층</p>
+                      <p><a href="#">자세히 보기</a></p>
+                    </dd>
+                  </dl>
+                </li>
+
+              </ul>
             </article>
             <!-- // .box_map_store -->
             <article class="box_introduce">
+              <h3 class="hidden">알라딘 서비스 소개</h3>
               <div class="box_wrap">
                 <ul>
                   <li>
@@ -659,8 +822,9 @@
             <!-- // .box_introduce -->
           </article>
           <!-- // #contentBox -->
-          <footerBox id="footBox">
+          <footer id="footBox">
             <nav id="inb">
+              <h2 class="hidden">알라딘 정보 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li><a href="#">회사소개</a></li>
@@ -676,7 +840,7 @@
                 </ul>
               </div>
             </nav>
-            <article class="box_foot">
+            <div class="box_foot">
               <div class="box_wrap">
                 <h2><span class="hidden">알라딘 로고</span></h2>
                 <div class="foot_content">
@@ -713,12 +877,13 @@
                   </div>
                 </div>
               </div>
-            </article>
-          </footerBox>
+            </div>
+          </footer>
           <!-- // #footBox -->
         </div>
         <script src="../js/jquery/jquery-3.2.1.min.js"></script>
         <script src="../js/jquery/jquery-ui.min.js"></script>
+        <script src="../js/src/common.js"></script>
         <script src="../js/src/main.js"></script>
       </body>
     </html>

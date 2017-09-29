@@ -12,14 +12,14 @@
           <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
           <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
           <link rel="stylesheet" type="text/css" href="../css/src/sub_used.css" />
-          <script src="../js/jquery/jquery-3.2.1.min.js"></script>
-          <script src="../js/jquery/jquery-ui.min.js"></script>
           <title>알라딘</title>
       </head>
       <body>
         <div id="wrap">
           <header id="headBox">
+            <h1 class="hidden">알라딘</h1>
             <nav id="unb">
+              <h2 class="hidden">유저 네비게이션 바</h2>
               <div class="box_wrap"> 
               <!-- .box_wrap은 가로 사이즈용 태그입니다. -->
                 <ul>
@@ -31,8 +31,9 @@
               </div>
             </nav>
             <article class="box_main_head">
+              <h2 class="hidden">알라딘 메인 헤더</h2>
               <div class="box_wrap">
-                <h1 index="0"><a href="main.html"><span class="hidden">알라딘</span></a></h1>
+                <div id="logo" class="find_a"><a href="main.html"><span class="hidden">알라딘</span></a></div>
                 <form action="#" method="get">
                   <fieldset>
                     <legend></legend>
@@ -58,13 +59,10 @@
               </div>
             </article>
             <nav id="gnb">
+              <h2 class="hidden">글로벌 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
-                  <li id="menuButton">
-                    <button type="button" id="buttonDeco">
-                      <span class="hidden">menu</span>
-                    </button>
-                  </li>
+                  <li id="menuButton"><button type="button" id="buttonDeco"><span class="hidden">menu</span></button></li>
                   <li><a href="sub_interior.html">국내도서</a></li>
                   <li><a href="sub_abroad.html">해외도서</a></li>
                   <li><a href="sub_ebook.html">ebook</a></li>
@@ -85,7 +83,6 @@
                 <h3 class="hidden">알라딘 중고매장 정보</h3>
                 <div class="aladin_news clearfix">
                   <h4>알라딘 새소식</h4>
-                  
                     <ul>
                       <li><a href="#">중고서점 가로수길점 신규 오픈!</a></li>
                       <li><a href="#">참고서/대학교재 10% 할인 쿠폰!</a></li>
@@ -106,7 +103,6 @@
                       <li><a href="#">직수입 중고 외서 최대 80% 할인</a></li>
                     </ul>
                     <div class="btn_more"><i class="fa fa-plus" aria-hidden="true"></i><span class="hidden">새소식 더보기</span></div>
-                  
                 </div>
                 <div class="used_info">
                   <h4 class="hidden">중고매장 정보</h4>
@@ -150,7 +146,7 @@
                             </dd>
                             <dt><label for="productName">상품명 또는 ISBN<span class="hidden">을 입력해서 검색하세요.</span> </label></dt>
                             <dd class="search_product">
-                              <input type="search" name="productName" id="productName" vlaue="">
+                              <input type="search" name="productName" id="productName" value="">
                               <button type="button">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                                 <span class="hidden">검색버튼</span>
@@ -162,7 +158,7 @@
                     </div>
                   </div>
                   <div class="purchase_info">
-                    <h5>오늘 매입 가능 종수 : <span>908,189</span>종</h5>
+                    <h5><i class="fa fa-plus" aria-hidden="true"></i>오늘 매입 가능 종수 : <span>908,189</span>종</h5>
                     <dl>
                       <dt>정상매입</dt>
                       <dd><span>435,425</span>종</dd>
@@ -212,21 +208,61 @@
             </article>
             <!-- // .search_used ____________ -->
             <section id="addBanner">
+              <h3 class="hidden">중고도서 이벤트</h3>
               <div class="wrap_banner">
                 <ul>
-                  <li class="bn_1"><a href="#"></a></li>
-                  <li class="bn_2"><a href="#"></a></li>
-                  <li class="bn_3"><a href="#"></a></li>
-                  <li class="bn_4"><a href="#"></a></li>
+                  <li class="bn_1"><a href="#">
+                    <span class="hidden">
+                      중교샵 우주 판매자
+                      북퀴즈 프로그램 중고 원서
+                    </span>
+                  </a></li>
+                  <li class="bn_2"><a href="#">
+                    <span class="hidden">
+                      알라딘 직배송 중고
+                      2천원 할인 쿠폰
+                      계정당 월 1회
+                    </span>
+                  </a></li>
+                  <li class="bn_3"><a href="#">
+                    <span class="hidden">
+                      직수입 중고음반 균일가
+                      1천원, 2천원, 3천원
+                    </span>
+                  </a></li>
+                  <li class="bn_4"><a href="#">
+                    <span class="hidden">
+                      중고 라이트노벨
+                      10% 할인 쿠폰
+                    </span>
+                  </a></li>
                 </ul>
               </div>
               <div class="box_btn">
                 <div class="btn_left"></div>
                 <ul class="btn_indicate">
-                  <li><button type="button"></button></li>
-                  <li><button type="button"></button></li>
-                  <li><button type="button"></button></li>
-                  <li><button type="button"></button></li>
+                  <li><button type="button">
+                    <span class="hidden">`
+                      중교샵 우주 판매자
+                    </span>
+                  </button></li>
+                  <li><button type="button">
+                    <span class="hidden">`
+                      알라딘 직배송 중고
+                      2천원 할인 쿠폰
+                    </span>
+                  </button></li>
+                  <li><button type="button">
+                    <span class="hidden">`
+                      직수입 중고음반 균일가
+                    </span>
+                  </button></li>
+                  <li><button type="button">
+                    <span class="hidden">`
+                      중고 라이트노벨
+                      10% 할인
+                    </span>
+                  </button></li>
                 </ul>
                 <div class="btn_right"></div>
               </div>
@@ -276,8 +312,9 @@
             <!-- // .box_new -->
           </article>
           <!-- // #contentBox -->
-          <footerBox id="footBox">
+          <footer id="footBox">
             <nav id="inb">
+              <h2 class="hidden">알라딘 정보 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li><a href="#">회사소개</a></li>
@@ -293,7 +330,7 @@
                 </ul>
               </div>
             </nav>
-            <article class="box_foot">
+            <div class="box_foot">
               <div class="box_wrap">
                 <h2><span class="hidden">알라딘 로고</span></h2>
                 <div class="foot_content">
@@ -330,10 +367,12 @@
                   </div>
                 </div>
               </div>
-            </article>
-          </footerBox>
+            </div>
+          </footer>
           <!-- // #footBox -->
         </div>
-        <!-- <script src="../js/src/main.js"></script> -->
+        <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery/jquery-ui.min.js"></script>
+        <script src="../js/src/sub_used.js"></script>
       </body>
     </html>

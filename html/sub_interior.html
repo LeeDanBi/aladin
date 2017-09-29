@@ -12,14 +12,14 @@
           <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
           <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
           <link rel="stylesheet" type="text/css" href="../css/src/sub_interior.css" />
-          <script src="../js/jquery/jquery-3.2.1.min.js"></script>
-          <script src="../js/jquery/jquery-ui.min.js"></script>
           <title>알라딘</title>
       </head>
       <body>
         <div id="wrap">
           <header id="headBox">
+            <h1 class="hidden">알라딘</h1>
             <nav id="unb">
+              <h2 class="hidden">유저 네비게이션 바</h2>
               <div class="box_wrap"> 
               <!-- .box_wrap은 가로 사이즈용 태그입니다. -->
                 <ul>
@@ -31,8 +31,9 @@
               </div>
             </nav>
             <article class="box_main_head">
+              <h2 class="hidden">알라딘 메인 헤더</h2>
               <div class="box_wrap">
-                <h1 index="0"><a href="main.html"><span class="hidden">알라딘</span></a></h1>
+                <div id="logo" class="find_a"><a href="main.html"><span class="hidden">알라딘</span></a></div>
                 <form action="#" method="get">
                   <fieldset>
                     <legend></legend>
@@ -58,6 +59,7 @@
               </div>
             </article>
             <nav id="gnb">
+              <h2 class="hidden">글로벌 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li id="menuButton"><button type="button" id="buttonDeco"><span class="hidden">menu</span></button></li>
@@ -75,28 +77,66 @@
           </header>
           <!-- // #headBox -->
           <section id="addBanner">
+            <h2 class="hidden">알라딘 국내도서 이벤트</h2>
             <div class="wrap_banner">
               <ul>
-                <li class="bn_1"><a href="#"></a></li>
-                <li class="bn_2"><a href="#"></a></li>
-                <li class="bn_3"><a href="#"></a></li>
-                <li class="bn_4"><a href="#"></a></li>
+                <li class="bn_1"><a href="#">
+                  <span class="hidden">
+                    장르소설 only
+                    월간 사건과 우주
+                  </span>
+                </a></li>
+                <li class="bn_2"><a href="#">
+                  <span class="hidden">
+                    2018학년도 수능 완벽 마무리
+                    파이널 플래너 증정 이벤트
+                  </span>
+                </a></li>
+                <li class="bn_3"><a href="#">
+                  <span class="hidden">
+                    알라딘 청소년 출판모임
+                    청소년 도서 340선 추천전
+                    알라딘 데스크 패드 증정 이벤트
+                  </span>
+                </a></li>
+                <li class="bn_4"><a href="#">
+                  <span class="hidden">
+                    윤태호 작가 틀별전
+                    미생과 오리진의 세계
+                  </span>
+                </a></li>
               </ul>
             </div>
             <div class="box_btn">
               <div class="btn_left"></div>
               <ul class="btn_indicate">
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    월간 사건과 우주
+                  </span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    2018학년도 수능 완벽 마무리
+                  </span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    청소년 도서 340선 추천전
+                  </span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    윤태호 작가 특별전
+                  </span>
+                </button></li>
               </ul>
               <div class="btn_right"></div>
             </div>
           </section>
           <!-- // #addBanner -->
           <article id="contentBox">
-            <h2 class="hidden">알라딘 contentBox</h2>
+            <h2 class="hidden">알라딘 국내도서 페이지</h2>
             <article class="intro_book">
               <h3 class="hidden">책 소개</h3>
               <div class="box_book_img">
@@ -118,7 +158,7 @@
                     <dt>교토에 다녀왔습니다.</dt>
                     <dd>
                       <p>임경선 / 예담</p>
-                      <p>임경선 신작 에세이. <임경선의 도쿄>에 이어 교토 여행기를 선보인다. '감각'의 도시 도쿄와 달리, 교토는 돈보다는 살아가는 자세가 중요한 도시, 전통을 지키며 고유의 색깔을 간직하는 도시, 타인에 대한 배려와 예의를 중시하는 도시, 그리고 '정서'의 도시다. 작가는 한 계절을 여행하며 까다로운 시선으로 선별한 교토의 장소들을 소개하고, 그곳에서 배운 교토의 매혹적인 정서들에 관해 이야기를 풀어낸다.</p>
+                      <p>임경선 신작 에세이. &lt;임경선의 도쿄&gt;에 이어 교토 여행기를 선보인다. '감각'의 도시 도쿄와 달리, 교토는 돈보다는 살아가는 자세가 중요한 도시, 전통을 지키며 고유의 색깔을 간직하는 도시, 타인에 대한 배려와 예의를 중시하는 도시, 그리고 '정서'의 도시다. 작가는 한 계절을 여행하며 까다로운 시선으로 선별한 교토의 장소들을 소개하고, 그곳에서 배운 교토의 매혹적인 정서들에 관해 이야기를 풀어낸다.</p>
                     </dd>
                   </dl>
                 </div>
@@ -209,8 +249,9 @@
             <!-- // .box_new -->
           </article>
           <!-- // #contentBox -->
-          <footerBox id="footBox">
+          <footer id="footBox">
             <nav id="inb">
+              <h2 class="hidden">알라딘 정보 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li><a href="#">회사소개</a></li>
@@ -226,7 +267,7 @@
                 </ul>
               </div>
             </nav>
-            <article class="box_foot">
+            <div class="box_foot">
               <div class="box_wrap">
                 <h2><span class="hidden">알라딘 로고</span></h2>
                 <div class="foot_content">
@@ -263,10 +304,13 @@
                   </div>
                 </div>
               </div>
-            </article>
-          </footerBox>
+            </div>
+          </footer>
           <!-- // #footBox -->
         </div>
+        <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery/jquery-ui.min.js"></script>
+        <script src="../js/src/common.js"></script>
         <script src="../js/src/sub_interior.js"></script>
       </body>
     </html>

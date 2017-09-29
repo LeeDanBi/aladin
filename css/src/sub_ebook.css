@@ -72,7 +72,7 @@
   height: 118px;
   padding-top: 22px;
   box-sizing: border-box; }
-  .box_main_head h1 {
+  .box_main_head #logo {
     width: 181px;
     height: 82px;
     background-image: url("../../img/header/logo.png");
@@ -308,6 +308,12 @@
           height: 100%;
           display: block; }
 
+@media screen and (max-width: 1150px) {
+  #inb > .box_wrap {
+    width: 960px; }
+  #inb > .box_wrap li {
+    font-size: 0.8125rem; } }
+
 #addBanner {
   width: 100%;
   height: 600px;
@@ -328,16 +334,13 @@
         background-position: center;
         background-size: cover; }
         #addBanner .wrap_banner ul li.bn_1 {
-          background-image: url("../../img/main/event/event_1.png");
+          background-image: url("../../img/sub_ebook/event/event_01.png");
           background-repeat: no-repeat; }
         #addBanner .wrap_banner ul li.bn_2 {
-          background-image: url("../../img/main/event/event_2.png");
+          background-image: url("../../img/sub_ebook/event/event_02.png");
           background-repeat: no-repeat; }
         #addBanner .wrap_banner ul li.bn_3 {
-          background-image: url("../../img/main/event/event_3.png");
-          background-repeat: no-repeat; }
-        #addBanner .wrap_banner ul li.bn_4 {
-          background-image: url("../../img/main/event/event_4.png");
+          background-image: url("../../img/sub_ebook/event/event_03.png");
           background-repeat: no-repeat; }
       #addBanner .wrap_banner ul a {
         width: 100%;
@@ -346,15 +349,15 @@
         position: absolute;
         z-index: 500; }
   #addBanner .box_btn {
-    width: 390px;
+    width: 330px;
     height: 0;
     position: absolute;
     left: 50%;
-    margin-left: -195px;
+    margin-left: -165px;
     bottom: 108px;
     z-index: 1000; }
     #addBanner .box_btn .btn_indicate {
-      width: 254px;
+      width: 184px;
       float: left;
       margin: 14px 40px 0 40px; }
       #addBanner .box_btn .btn_indicate li {
@@ -400,10 +403,12 @@
   .box_Einfo h3 {
     width: auto;
     height: 40px;
-    margin-left: 390px;
+    display: inline-block;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    position: relative; }
+    position: relative;
+    left: 50%;
+    margin-left: -115px; }
     .box_Einfo h3::before {
       content: " ";
       display: block;
@@ -423,7 +428,7 @@
       background-image: url("../../img/title_deco.png");
       background-repeat: no-repeat;
       top: 20px;
-      left: 175px;
+      right: -212px;
       background-position: right; }
   .box_Einfo ul {
     width: 100%;
@@ -434,9 +439,25 @@
       float: left;
       background-color: #4C5C6C;
       margin-right: 20px;
-      border-radius: 110px; }
+      border-radius: 110px;
+      background-position: center;
+      transition: all 300ms; }
+      .box_Einfo ul li:nth-child(1) {
+        background-image: url("../../img/sub_ebook/icon_1.png");
+        background-repeat: no-repeat; }
+      .box_Einfo ul li:nth-child(2) {
+        background-image: url("../../img/sub_ebook/icon_2.png");
+        background-repeat: no-repeat; }
+      .box_Einfo ul li:nth-child(3) {
+        background-image: url("../../img/sub_ebook/icon_3.png");
+        background-repeat: no-repeat; }
+      .box_Einfo ul li:nth-child(4) {
+        background-image: url("../../img/sub_ebook/icon_4.png");
+        background-repeat: no-repeat; }
       .box_Einfo ul li:last-child {
         margin-right: 0; }
+      .box_Einfo ul li:hover {
+        background-color: #F18C00; }
 
 .book_show {
   width: 100%;
@@ -452,10 +473,12 @@
   .book_show h3 {
     width: auto;
     height: 40px;
-    margin-left: 390px;
+    display: inline-block;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    position: relative; }
+    position: relative;
+    left: 50%;
+    margin-left: -100px; }
     .book_show h3::before {
       content: " ";
       display: block;
@@ -475,7 +498,7 @@
       background-image: url("../../img/title_deco.png");
       background-repeat: no-repeat;
       top: 20px;
-      left: 175px;
+      right: -212px;
       background-position: right; }
   .book_show .list_wrap {
     width: 950px;
@@ -534,6 +557,87 @@
     .book_show .btn_book .bnt_right_ {
       background-position: -62px center;
       margin-right: 0; }
+
+.box_popular {
+  height: 1200px; }
+  .box_popular .list_wrap {
+    height: 720px; }
+    .box_popular .list_wrap > ul.list_book {
+      width: auto;
+      margin-left: 80px; }
+      .box_popular .list_wrap > ul.list_book li {
+        width: 224px;
+        height: 330px;
+        margin-right: 54px;
+        margin-bottom: 52px; }
+        .box_popular .list_wrap > ul.list_book li:nth-child(1) {
+          background-image: url("../../img/sub_ebook/popular_book/pop_1.jpg");
+          background-repeat: no-repeat; }
+        .box_popular .list_wrap > ul.list_book li:nth-child(2) {
+          background-image: url("../../img/sub_ebook/popular_book/pop_2.jpg");
+          background-repeat: no-repeat; }
+        .box_popular .list_wrap > ul.list_book li:nth-child(3) {
+          background-image: url("../../img/sub_ebook/popular_book/pop_3.jpg");
+          background-repeat: no-repeat; }
+        .box_popular .list_wrap > ul.list_book li:nth-child(4) {
+          background-image: url("../../img/sub_ebook/popular_book/pop_4.jpg");
+          background-repeat: no-repeat; }
+        .box_popular .list_wrap > ul.list_book li:nth-child(5) {
+          background-image: url("../../img/sub_ebook/popular_book/pop_5.jpg");
+          background-repeat: no-repeat; }
+        .box_popular .list_wrap > ul.list_book li:nth-child(6) {
+          background-image: url("../../img/sub_ebook/popular_book/pop_6.jpg");
+          background-repeat: no-repeat; }
+        .box_popular .list_wrap > ul.list_book li:nth-child(3n) {
+          margin-right: 0; }
+
+#btnMore {
+  height: 60px;
+  bottom: 60px;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 60px;
+  bottom: 130px; }
+  #btnMore:hover {
+    background-color: #F18C00; }
+  #btnMore:hover > a {
+    color: #fff; }
+
+.box_free .list_book li {
+  border-radius: 150px;
+  position: relative; }
+  .box_free .list_book li:nth-child(1) {
+    background-image: url("../../img/sub_ebook/free_book/free_1.jpg");
+    background-repeat: no-repeat; }
+  .box_free .list_book li:nth-child(2) {
+    background-image: url("../../img/sub_ebook/free_book/free_2.jpg");
+    background-repeat: no-repeat; }
+  .box_free .list_book li:nth-child(3) {
+    background-image: url("../../img/sub_ebook/free_book/free_3.jpg");
+    background-repeat: no-repeat; }
+  .box_free .list_book li:nth-child(4) {
+    background-image: url("../../img/sub_ebook/free_book/free_4.jpg");
+    background-repeat: no-repeat; }
+  .box_free .list_book li:nth-child(5) {
+    background-image: url("../../img/sub_ebook/free_book/free_5.jpg");
+    background-repeat: no-repeat; }
+  .box_free .list_book li:nth-child(6) {
+    background-image: url("../../img/sub_ebook/free_book/free_6.jpg");
+    background-repeat: no-repeat; }
+  .box_free .list_book li::before {
+    content: " ";
+    display: block;
+    width: 94px;
+    height: 64px;
+    position: absolute;
+    background-image: url("../../img/sub_ebook/icon_free.png");
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0; }
 
 .box_notice {
   width: 100%;

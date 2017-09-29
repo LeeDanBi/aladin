@@ -12,14 +12,14 @@
           <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
           <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
           <link rel="stylesheet" type="text/css" href="../css/src/sub_ebook.css" />
-          <script src="../js/jquery/jquery-3.2.1.min.js"></script>
-          <script src="../js/jquery/jquery-ui.min.js"></script>
           <title>알라딘</title>
       </head>
       <body>
         <div id="wrap">
           <header id="headBox">
+            <h1 class="hidden">알라딘</h1>
             <nav id="unb">
+              <h2 class="hidden">유저 네비게이션 바</h2>
               <div class="box_wrap"> 
               <!-- .box_wrap은 가로 사이즈용 태그입니다. -->
                 <ul>
@@ -31,8 +31,9 @@
               </div>
             </nav>
             <article class="box_main_head">
+              <h2 class="hidden">알라딘 메인 헤더</h2>
               <div class="box_wrap">
-                <h1 index="0"><a href="main.html"><span class="hidden">알라딘</span></a></h1>
+                <div id="logo" class="find_a"><a href="main.html"><span class="hidden">알라딘</span></a></div>
                 <form action="#" method="get">
                   <fieldset>
                     <legend></legend>
@@ -58,6 +59,7 @@
               </div>
             </article>
             <nav id="gnb">
+              <h2 class="hidden">글로벌 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li id="menuButton"><button type="button" id="buttonDeco"><span class="hidden">menu</span></button></li>
@@ -75,27 +77,59 @@
           </header>
           <!-- // #headBox -->
           <section id="addBanner">
+            <h2 class="hidden">ebook 이벤트</h2>
             <div class="wrap_banner">
               <ul>
-                <li class="bn_1"><a href="#"></a></li>
-                <li class="bn_2"><a href="#"></a></li>
-                <li class="bn_3"><a href="#"></a></li>
-                <li class="bn_4"><a href="#"></a></li>
+                <li class="bn_1"><a href="#">
+                  <span class="hidden">
+                    리베카 솔닛
+                    ebook 출간
+                    단독판매, 적립금 추첨 이벤트
+                  </span>
+                </a></li>
+                <li class="bn_2"><a href="#">
+                  <span class="hidden">
+                    10년대여 ebook
+                    최대 83%할인
+                    30%추가 쿠폰 증정 이벤트
+                  </span>
+                </a></li>
+                <li class="bn_3"><a href="#">
+                  <span class="hidden">
+                    해리포터 시리즈
+                    ebook세트 30%할인 이벤트
+                    한글판, 영어판 특가 세트
+                  </span>
+                </a></li>
               </ul>
             </div>
             <div class="box_btn">
               <div class="btn_left"></div>
               <ul class="btn_indicate">
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    리베카 솔닛
+                    ebook 출간
+                  </span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    10년대여 ebook
+                    최대 83%할인
+                  </span>
+                </button></li>
+                <li><button type="button">
+                  <span class="hidden">
+                    해리보터 ebook 시리즈 30%할인
+                  </span>
+                </button></li>
               </ul>
               <div class="btn_right"></div>
             </div>
           </section>
           <!-- // #addBanner -->
           <article id="contentBox">
+            <h2 class="hidden">ebook 페이지</h2>
             <article class="box_Einfo">
               <div class="box_wrap">
                 <h3>이용기기 안내</h3>
@@ -129,9 +163,12 @@
                 <h3>인기 시리즈</h3>
                 <div class="list_wrap">
                   <ul class="list_book">
-                    <li class="book_1"><a href="#"></a></li>
-                    <li class="book_2"><a href="#"></a></li>
-                    <li class="book_3"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                   </ul>
                 </div>
                 <div id="btnMore" class="btn_book inner_a">
@@ -162,6 +199,7 @@
             </article>
             <!-- // .box_free -->
             <article class="box_notice">
+              <h3 class="hidden">공지사항</h3>
               <div class="box_btn">
                 <div class="btn btn_l"></div>
                 <div class="btn btn_r"></div>
@@ -345,8 +383,9 @@
             <!-- // .box_notice -->
           </article>
           <!-- // #contentBox -->
-          <footerBox id="footBox">
+          <footer id="footBox">
             <nav id="inb">
+              <h2 class="hidden">알라딘 정보 네비게이션 바</h2>
               <div class="box_wrap">
                 <ul>
                   <li><a href="#">회사소개</a></li>
@@ -362,7 +401,7 @@
                 </ul>
               </div>
             </nav>
-            <article class="box_foot">
+            <div class="box_foot">
               <div class="box_wrap">
                 <h2><span class="hidden">알라딘 로고</span></h2>
                 <div class="foot_content">
@@ -399,10 +438,14 @@
                   </div>
                 </div>
               </div>
-            </article>
-          </footerBox>
+            </div>
+          </footer>
           <!-- // #footBox -->
         </div>
-        <!-- <script src="../js/src/main.js"></script> -->
+        <!-- script -->
+        <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery/jquery-ui.min.js"></script>
+        <script src="../js/src/common.js"></script>
+        <script src="../js/src/sub_ebook.js"></script>
       </body>
     </html>
