@@ -169,8 +169,6 @@
     });
 
   // *매장 이미지 사진
-  // var _dataImg = boxcon_li.eq(1).find('.store_img');
-  // console.log(_dataImg);
 
    for(var i=0; i < map_li.length; i++){
     var _store_img = boxcon_li.eq(i).find('.store_img');

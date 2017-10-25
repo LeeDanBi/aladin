@@ -14,20 +14,6 @@
   var wst = $(this).scrollTop();
   var mot = aladinInfo.offset().top;
 
-  // if(wst>=mot){
-  //   menuButton.slideDown().css({position:'fixed', top: '0'}).removeClass('button_deco');
-  //   if(gnb.css('position')=='fixed' && gnb.css('top')=='0'){
-  //   menuButton.css({position:'absolute', top: '60px'});
-  //   }
-  // }else{
-  //   
-  //   menuButton.slideUp();
-  //   menuButton.css({position:'absolute', top: '60px'});
-  //   if(gnb.css('position')=='fixed'){
-  //     gnb.css({position:'relative', top: 0});
-  //   }
-  // }
-
  if(wst>=mot){
   gnb.addClass('fixed');
   menuButton.slideDown();
@@ -53,21 +39,6 @@
        gnb.css({transform:'translateY(-60px)',transition:'all 500ms'});
       }
   });
-
-  //   //버튼 눌렀을 떄--
-  // var buttonDeco = $('#buttonDeco')
-  //   menuButton.on('click',function(e){
-  //     e.preventDefault();
-  //     buttonDeco.stop().toggleClass('button_deco');
-  //     if(buttonDeco.hasClass('button_deco')){
-  //       gnb.css({position:'fixed', top: '-60px', zIndex:'6000'}).animate({top:'0'});
-  //       menuButton.animate({position:'fixed', top: '60px'});
-  //     }else{
-  //       gnb.animate({position:'fixed', top: '-60px'});
-  //       menuButton.animate({position:'fixed', top: '0'});
-  //     }
-  //       //버그가 많이 일어나고 있습니다. 도와주세요.
-  //   });
 
   //---------------------------
 
@@ -215,11 +186,7 @@ boxBtn.on('mouseleave',SetIn);
       //버튼 모양 돌아가기
       aladin_bth.css({transform: 'rotate(0deg)'});
     }
-
-    
-
   });
-
 })(); //즉시실행 함수 (알라딘 뉴스)
 
 //---------------------------
